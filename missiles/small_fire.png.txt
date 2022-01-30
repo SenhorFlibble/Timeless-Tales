@@ -1,4 +1,0 @@
-Authors: Nikita Sadkov, Jinn, Martin Jelinek, 2016
-License: GPL2
-Comment: Wyrmsun's small_fire was a little low on contrast, so I recolored it and reduced to 6 frames, like original WC2 animation. GPL2 licensed. Edited by Jinn out of a public domain by Martin Jelinek.
-Origin: https://forums.stratagus.com/viewtopic.php?f=33&t=3624&sid=57df551379335b0a67f07cbe2a2515ab&start=40
