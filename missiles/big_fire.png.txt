@@ -1,4 +1,0 @@
-Authors: Nikita Sadkov, Jinn, Martin Jelinek, 2016
-License: GPL2
-Comment: Recolored Wyrmsun's big fire. Authors and license same as above. Although I have retouched it a little.
-Origin: https://forums.stratagus.com/viewtopic.php?f=33&t=3624&sid=57df551379335b0a67f07cbe2a2515ab&start=40
