@@ -1,1 +1,3 @@
-copyright grumbel 
+Author: b_o
+License: GPL 2.0 and CC-BY-SA 3.0
+Comment: originally part of Wyrmsun
