@@ -1,2 +1,2 @@
-Authors: Adam Podeszfa 2002, Nikita Sadkov 2015
+Authors: Adam Podeszfa 2002, Nikita Sadkov 2016
 License: GPL2

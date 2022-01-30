@@ -1,0 +1,4 @@
+copyright Renaud Blanchard & Carlo Almario
+
+
+roof recolour based on work by diKKen for the swamp version

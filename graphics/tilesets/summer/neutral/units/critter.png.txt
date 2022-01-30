@@ -1,1 +1,2 @@
 copyright grumbel 
+fixed diagonal frames by MrFlibble
