@@ -1,0 +1,2 @@
+Author: the Battle for Wesnoth Team
+License: GPL 2.0
