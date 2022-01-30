@@ -1,0 +1,3 @@
+Author: Jinn
+License: GPL 2.0 and CC-BY-SA 3.0
+Notes: scaled down using MSPaint and edited with GrafX2 for cleanup to fit the frame size
