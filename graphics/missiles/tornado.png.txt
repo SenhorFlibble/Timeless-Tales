@@ -1,1 +1,3 @@
-copyright by Carlo Almario 2002 
+Authors: Nikita Sadkov, 2016
+Comment: Edited desert wind animation from Battle for Wesnoth.
+Origin: https://forums.stratagus.com/viewtopic.php?f=33&t=3624&start=50

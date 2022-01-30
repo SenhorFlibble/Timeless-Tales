@@ -1,0 +1,4 @@
+Authors: Nikita Sadkov, 2016
+Comment: Lightning projectile was drawn by myself. The impact effect is a recolor of public domain animation by Lionx_Dagger: http://opengameart.org/content/repeal
+Recoloured into green as placeholder
+Origin: https://forums.stratagus.com/viewtopic.php?f=33&t=3624&start=50#p6380

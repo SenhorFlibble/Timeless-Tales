@@ -1,1 +1,4 @@
-copyright by Paolo D'Inca 
+Authors: Nikita Sadkov, 2016
+License: GPL
+Comment: Warcraft 2 compatible 64x64 16-frames explosion sprite. GPL licensed, because smoke is edited from Seven Kingdoms sprite.
+Origin: https://forums.stratagus.com/viewtopic.php?f=33&t=3624&start=40#p6368
