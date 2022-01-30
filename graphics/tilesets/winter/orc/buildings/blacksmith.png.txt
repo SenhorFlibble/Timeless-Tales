@@ -1,0 +1,3 @@
+Authors: José Plans, 2002, fixes by Nikita Sadkov, 2016
+Comment: Fixed the blacksmith tent perspective, which was garbled.
+Origin: https://forums.stratagus.com/viewtopic.php?f=33&t=3624&start=10
