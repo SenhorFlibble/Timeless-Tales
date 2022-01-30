@@ -1,0 +1,2 @@
+Authors: Hendrik Brüns, 2002, scarecrow by IsometricRobot, 2012, shadow added by MrFlibble
+Licenses: GPL 2.0, CC-BY 3.0
