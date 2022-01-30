@@ -277,7 +277,7 @@ UI.Resources[ScoreCost].TextX = Video.Width - 360 + 300 + 18
 UI.Resources[ScoreCost].TextY = Video.Height + 2 - 16 - 160 + 1
 
 -- mana
-UI.Resources[ManaResCost].G = CGraphic:New(Wyrmsun .. "graphics/ui/mana_icon.png", 14, 14)
+UI.Resources[ManaResCost].G = CGraphic:New("ui/gold,wood,oil,mana.png", 14, 14)
 UI.Resources[ManaResCost].IconFrame = 3
 UI.Resources[ManaResCost].IconX = -100
 UI.Resources[ManaResCost].IconY = -100
