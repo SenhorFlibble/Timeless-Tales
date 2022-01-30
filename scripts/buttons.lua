@@ -31,7 +31,7 @@
 -- Load the buttons of all races
 
 Load("scripts/human/buttons.lua")
-Load("scripts/orc/buttons.lua")
+Load("scripts/wild/buttons.lua")
 Load("scripts/caanoo/buttons.lua")
 
 ------------------------------------------------------------------------------

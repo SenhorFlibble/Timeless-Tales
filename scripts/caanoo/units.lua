@@ -243,14 +243,9 @@ DefineAnimations("animations-dwarf", {
   Death = {"unbreakable begin", "frame 50", "wait 3", "frame 55", "wait 3", "frame 60", "wait 100",
     "frame 60", "unbreakable end", "wait 1",},
 })
-	
-UnitTypeFiles["unit-mythic-barracks"] = {summer = "tilesets/summer/orc/buildings/barracks.png",
-  winter = "tilesets/winter/orc/buildings/barracks.png",
-  wasteland = "tilesets/summer/orc/buildings/barracks.png",
-  swamp = "tilesets/swamp/orc/buildings/barracks.png"}
 
 DefineUnitType("unit-mythic-barracks", { Name = "Barracks",
-  Image = {"size", {96, 96}},
+  Image = {"file", "wild/buildings/barracks.png", "size", {96, 96}},
   Animations = "animations-building", Icon = "icon-orc-barracks",
   Costs = {"time", 200, "gold", 700, "wood", 450},
   RepairHp = 4,
@@ -418,13 +413,8 @@ DefineUnitType("unit-caanoo-townhall", { Name = "Town Hall",
 	
 -- Other Buildings
 
-UnitTypeFiles["unit-void-gateway"] = {summer = "tilesets/summer/neutral/buildings/dark_portal.png",
-  winter = "tilesets/winter/neutral/buildings/dark_portal.png",
-  wasteland = "tilesets/wasteland/neutral/buildings/dark_portal.png",
-  swamp = "tilesets/swamp/neutral/buildings/dark_portal.png"}
-
 DefineUnitType("unit-void-gateway", { Name = "Void Gateway",
-  Image = {"size", {128, 128}},
+  Image = {"file", "neutral/buildings/dark_portal.png","size", {128, 128}},
   Animations = "animations-building", Icon = "icon-dark-portal",
   NeutralMinimapColor = {255, 255, 0},
   Costs = {"time", 150},
@@ -551,7 +541,7 @@ DefineUnitType("unit-human-adventurer", { Name = "Adventurer",
     "dead", "basic human voices dead"} } )
 
 DefineUnitType("unit-caanoo-wiseskeleton", { Name = "Wise Shaman",
-	Image = {"file", Wyrmsun .. "/graphics/goblin/units/shaman.png", "size", {72, 72}},
+	Image = {"file", "wild/units/shaman.png", "size", {72, 72}},
 	Animations = "animations-death-knight", Icon = "icon-evil-knight",
 	Costs = {"time", 120, "gold", 1200},
 	Speed = 8,
@@ -597,7 +587,7 @@ DefineUnitType("unit-caanoo-wiseskeleton", { Name = "Wise Shaman",
 		"dead", "basic orc voices dead"} } )
 		
 DefineUnitType("unit-caanoo-wiseman", { Name = "Wise Man",
-	Image = {"file", Wyrmsun .. "/graphics/gnome/units/gnomish_herbalist_gray_hair.png", "size", {72, 72}},
+	Image = {"file", "human/units/gnomish_herbalist_gray_hair.png", "size", {72, 72}},
 	Animations = "animations-mage", Icon = "icon-mage",
 	Costs = {"time", 120, "gold", 1200},
 	Speed = 8,

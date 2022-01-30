@@ -102,24 +102,35 @@ DefineMissileType("missile-catapult-rock",
   DrawLevel = 50, Class = MissileParabolicClass, Sleep = 1, Speed = 8, Range = 2,
   ImpactMissile = "missile-impact", SplashFactor = 4 } )
 
+DefineMissileType("missile-catapult-blaze",
+  { File = "missiles/flaming_catapult_rock.png", Size = {32, 32}, Frames = 15, NumDirections = 9,
+  ImpactSound = "explosion",
+  DrawLevel = 50, Class = MissileParabolicClass, Sleep = 1, Speed = 8, Range = 2,
+  ImpactMissile = "missile-impact", SplashFactor = 4 } )
+
 DefineMissileType("missile-ballista-bolt",
-  { File = Wyrmsun ..  "graphics/missiles/dwarven_ballista_bolt.png", Size = {64, 64}, Frames = 5, NumDirections = 9,
+  { File = "missiles/ballista_bolt.png", Size = {64, 64}, Frames = 5, NumDirections = 9,
   DrawLevel = 50, ImpactSound = "explosion",
   Class = "missile-class-point-to-point", Sleep = 1, Speed = 8, Range = 2,
   ImpactMissile = "missile-impact", SplashFactor = 4 } )
 
 DefineMissileType("missile-arrow",
-  { File = Wyrmsun ..  "graphics/missiles/arrow.png", Size = {32, 32}, Frames = 5, NumDirections = 9,
+  { File = "missiles/arrow.png", Size = {40, 40}, Frames = 5, NumDirections = 9,
   DrawLevel = 50, ImpactSound = "bow hit",
   Class = "missile-class-point-to-point", Sleep = 1, Speed = 32, Range = 0 } )
 
 DefineMissileType("missile-arrow-super",
-  { File = Wyrmsun ..  "graphics/missiles/arrow.png", Size = {32, 32}, Frames = 5, NumDirections = 9,
+  { File = "missiles/metal_arrow.png", Size = {40, 40}, Frames = 5, NumDirections = 9,
   DrawLevel = 50, ImpactSound = "bow hit",
   Class = "missile-class-point-to-point", Sleep = 1, Speed = 64, Range = 0 } )
+
+DefineMissileType("missile-spear",
+  { File = "missiles/javelin.png", Size = {132, 132}, Frames = 5, NumDirections = 9,
+  DrawLevel = 50, ImpactSound = "axe hit",
+  Class = "missile-class-point-to-point", Sleep = 1, Speed = 32, Range = 0 } )
   
 DefineMissileType("missile-axe",
-  { File = Wyrmsun ..  "graphics/missiles/throwing_axe.png", Size = {32, 32}, Frames = 15, NumDirections = 9,
+  { File = "missiles/axe.png", Size = {32, 32}, Frames = 15, NumDirections = 9,
   ImpactSound = "axe hit",
   DrawLevel = 50, Class = "missile-class-point-to-point", Sleep = 1, Speed = 32, Range = 0 } )
   
@@ -136,11 +147,11 @@ DefineMissileType("missile-turtle-missile",
   ImpactMissile = "missile-impact" } )
 
 DefineMissileType("missile-small-fire",
-  { File = Wyrmsun ..  "graphics/missiles/small_fire.png", Size = {32, 48}, Frames = 10, NumDirections = 1,
+  { File = "missiles/small_fire.png", Size = {32, 48}, Frames = 6, NumDirections = 1,
   DrawLevel = 45, Class = "missile-class-fire", Sleep = 4, Speed = 16, Range = 1 } )
 
 DefineMissileType("missile-big-fire",
-  { File = Wyrmsun ..  "graphics/missiles/big_fire.png", Size = {48, 48}, Frames = 10, NumDirections = 1,
+  { File = "missiles/big_fire.png", Size = {48, 48}, Frames = 10, NumDirections = 1,
   DrawLevel = 45, Class = "missile-class-fire", Sleep = 4, Speed = 16, Range = 1 } )
 
 DefineMissileType("missile-impact",

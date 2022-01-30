@@ -32,7 +32,7 @@ UnitStill = {"frame 0", "wait 4", "random-goto 99 no-rotate", "random-rotate 1",
 BuildingStill = {"frame 0", "wait 4", "frame 0", "wait 1",}
 
 Load("scripts/human/anim.lua")
-Load("scripts/orc/anim.lua")
+Load("scripts/wild/anim.lua")
 
 
 DefineAnimations("animations-daemon", {
@@ -98,6 +98,21 @@ DefineAnimations("animations-human-dead-body", {
 DefineAnimations("animations-orc-dead-body", {
   Death = {"unbreakable begin", "frame 5", "wait 200", "frame 10", "wait 200", "frame 15", "wait 200",
     "frame 20", "wait 200", "frame 25", "wait 200", "frame 25", "unbreakable end", "wait 1",},
+})
+
+DefineAnimations("animations-dwarven-dead-body", {
+  Death = {"unbreakable begin", "frame 0", "wait 200", "frame 5", "wait 200", "frame 10", "wait 200",
+    "frame 15", "wait 200", "frame 15", "unbreakable end", "wait 1",},
+})
+
+DefineAnimations("animations-gnomish-dead-body", {
+  Death = {"unbreakable begin", "frame 0", "wait 200", "frame 15", "wait 200", "frame 20", "wait 200",
+    "frame 25", "wait 200", "frame 25", "unbreakable end", "wait 1",},
+})
+
+DefineAnimations("animations-goblin-dead-body", {
+  Death = {"unbreakable begin", "frame 5", "wait 200", "frame 15", "wait 200", "frame 20", "wait 200",
+    "frame 25", "wait 200", "frame 25", "unbreakable end", "wait 1",},
 })
 
 DefineAnimations("animations-dead-sea-body", {

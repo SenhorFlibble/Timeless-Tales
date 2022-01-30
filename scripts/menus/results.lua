@@ -1,7 +1,7 @@
 local hvictory = "ui/human/victory.png"
 local hdefeat =  "ui/human/defeat.png"
-local ovictory = "ui/orc/victory.png"
-local odefeat =  "ui/orc/defeat.png"
+local ovictory = "ui/wild/victory.png"
+local odefeat =  "ui/wild/defeat.png"
 
 local humanRanks = {
   0, _("Servant"),

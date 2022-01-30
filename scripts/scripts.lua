@@ -34,7 +34,7 @@ table.foreach(UnitTypeFiles,
 
 -- Fix critters sounds and name
 local CritterNames = {
-  summer = _("Sheep"), winter = _("Seal"), wasteland = _("Pig"), swamp = _("Warthog"),
+  summer = _("Sheep"), winter = _("Tux"), wasteland = _("Slime"), swamp = _("Snail"),
 }
 
 local CritterSounds = {
@@ -63,7 +63,7 @@ Load("scripts/constructions.lua")
 if (GetPlayerData(GetThisPlayer(), "RaceName") == "human") then
 	Load("scripts/human/ui.lua")
 elseif (GetPlayerData(GetThisPlayer(), "RaceName") == "orc") then
-	Load("scripts/orc/ui.lua")
+	Load("scripts/wild/ui.lua")
 end
 
 StopMusic()

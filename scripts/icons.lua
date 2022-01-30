@@ -34,30 +34,36 @@ function DefineIcon(arg)
 end
 
 local icons = {
-  {"icon-peon", 1},
-  {"icon-grunt", 3},
-  {"icon-axethrower", 5},
-  {"icon-berserker", 7},
-  {"icon-knight", 8},
+--  {"icon-peasant", 0},
+--  {"icon-peon", 1},
+--  {"icon-footman", 2},
+--  {"icon-grunt", 3},
+--  {"icon-archer", 4},
+--  {"icon-axethrower", 5},
+--  {"icon-ranger", 6},
+--  {"icon-berserker", 7},
+--  {"icon-knight", 8},
   {"icon-ogre", 9},
   {"icon-paladin", 10},
   {"icon-ogre-mage", 11},
   {"icon-dwarves", 12},
   {"icon-goblin-sappers", 13},
-  {"icon-mage", 14},
-  {"icon-death-knight", 15},
-  {"icon-ballista", 16},
-  {"icon-catapult", 17},
+--  {"icon-mage", 14},
+--  {"icon-death-knight", 15},
+--  {"icon-ballista", 16},
+--  {"icon-catapult", 17},
   {"icon-human-oil-tanker", 18},
   {"icon-orc-oil-tanker", 19},
+--  {"icon-human-transport", 20},
   {"icon-orc-transport", 21},
+--  {"icon-human-destroyer", 22},
   {"icon-orc-destroyer", 23},
   {"icon-battleship", 24},
   {"icon-ogre-juggernaught", 25},
   {"icon-gnomish-submarine", 26},
   {"icon-giant-turtle", 27},
   {"icon-gnomish-flying-machine", 28},
-  {"icon-zeppelin", 29},
+--  {"icon-zeppelin", 29},
   {"icon-gryphon-rider", 30},
   {"icon-dragon", 31},
   {"icon-wise-man", 32},
@@ -66,6 +72,17 @@ local icons = {
   {"icon-sharp-axe", 35},
   {"icon-double-head", 36},
   {"icon-daemon", 37},
+  {"icon-farm", 38},
+  {"icon-pig-farm", 39},
+  {"icon-town-hall", 40},
+  {"icon-great-hall", 41},
+  {"icon-human-barracks", 42},
+  {"icon-orc-barracks", 43},
+  {"icon-elven-lumber-mill", 44},
+  {"icon-troll-lumber-mill", 45},
+  {"icon-human-blacksmith", 46},
+  {"icon-orc-blacksmith", 47},
+  {"icon-human-shipyard", 48},
   {"icon-orc-shipyard", 49},
   {"icon-human-refinery", 50},
   {"icon-orc-refinery", 51},
@@ -99,10 +116,14 @@ local icons = {
   {"icon-oil-patch", 79},
   {"icon-dark-portal", 80},
   {"icon-circle-of-power", 81},
-  {"icon-runestone", 82}, 
+  {"icon-runestone", 82},
+  {"icon-move-peasant", 83},
   {"icon-move-peon", 84},
+  {"icon-repair", 85},
+  {"icon-harvest", 86},
   {"icon-build-basic", 87},
   {"icon-build-advanced", 88},
+  {"icon-return-goods-peasant", 89},
   {"icon-return-goods-peon", 90},
   {"icon-cancel", 91},
   {"icon-human-wall", 92},
@@ -127,15 +148,21 @@ local icons = {
   {"icon-eye-of-kilrogg", 111},
   {"icon-bloodlust", 112},
   {"icon-unknown113", 113},
-  {"icon-skeleton", 114},
+--  {"icon-skeleton", 114},
   {"icon-raise-dead", 114},
   {"icon-critter", 115},
   {"icon-polymorph", 115},
+  {"icon-sword1", 116},
+  {"icon-sword2", 117},
+  {"icon-sword3", 118},
   {"icon-battle-axe1", 119},
   {"icon-battle-axe2", 120},
   {"icon-battle-axe3", 121},
   {"icon-122", 122},
   {"icon-123", 123},
+  {"icon-arrow1", 124},
+  {"icon-arrow2", 125},
+  {"icon-arrow3", 126},
   {"icon-throwing-axe1", 127},
   {"icon-throwing-axe2", 128},
   {"icon-throwing-axe3", 129},
@@ -173,6 +200,9 @@ local icons = {
   {"icon-human-ship-haul-oil", 161},
   {"icon-human-unload", 162},
   {"icon-orc-unload", 163},
+  {"icon-human-shield1", 164},
+  {"icon-human-shield2", 165},
+  {"icon-human-shield3", 166},
   {"icon-orc-shield1", 167},
   {"icon-orc-shield2", 168},
   {"icon-orc-shield3", 169},
@@ -184,14 +214,17 @@ local icons = {
   {"icon-175", 175},
   {"icon-176", 176},
   {"icon-177", 177},
+{"icon-human-patrol-land", 178},
   {"icon-orc-patrol-land", 179},
+  {"icon-human-stand-ground", 180},
   {"icon-orc-stand-ground", 181},
+  {"icon-human-attack-ground", 182},
   {"icon-orc-attack-ground", 183},
   {"icon-human-patrol-naval", 184},
   {"icon-orc-patrol-naval", 185},
   {"icon-quick-blade", 186},
   {"icon-female-hero", 187},
-  {"icon-ugly-guy", 188},
+--  {"icon-ugly-guy", 188},
   {"icon-evil-knight", 189},
   {"icon-beast-cry", 190},
   {"icon-flying-angel", 191},
@@ -202,201 +235,111 @@ local icons = {
 }
 
 DefineIcon({
-	Name = "icon-human-patrol-land",
-	Size = {46, 38},
-	File = Wyrmsun .. "graphics/germanic/icons/patrol_land.png"
-})
-
-DefineIcon({
-	Name = "icon-human-stand-ground",
-	Size = {46, 38},
-	File = Wyrmsun .. "graphics/germanic/icons/stand_ground.png"
-})
-
-DefineIcon({
-	Name = "icon-return-goods-peasant",
-	Size = {46, 38},
-	File = Wyrmsun .. "graphics/germanic/icons/return_goods.png"
-})
-
-DefineIcon({
-	Name = "icon-arrow1",
-	Size = {46, 38},
-	File = Wyrmsun .. "graphics/germanic/icons/arrow.png"
-})
-
-DefineIcon({
-	Name = "icon-arrow2",
-	Size = {46, 38},
-	File = Wyrmsun .. "graphics/germanic/icons/barbed_arrow.png"
-})
-
-DefineIcon({
-	Name = "icon-arrow3",
-	Size = {46, 38},
-	File = Wyrmsun .. "graphics/germanic/icons/barbed_arrow_grayed.png"
-})
-
-DefineIcon({
-	Name = "icon-town-hall",
-	Size = {46, 38},
-	File = Wyrmsun .. "graphics/germanic/icons/town_hall.png"
-})
-
-DefineIcon({
-	Name = "icon-farm",
-	Size = {46, 38},
-	File = Wyrmsun .. "graphics/germanic/icons/farm.png"
-})
-
-DefineIcon({
-	Name = "icon-human-barracks",
-	Size = {46, 38},
-	File = Wyrmsun .. "graphics/germanic/icons/barracks.png"
-})
-
-DefineIcon({
-	Name = "icon-elven-lumber-mill",
-	Size = {46, 38},
-	File = Wyrmsun .. "graphics/germanic/icons/carpenters_shop.png"
-})
-
-DefineIcon({
-	Name = "icon-human-blacksmith",
-	Size = {46, 38},
-	File = Wyrmsun .. "graphics/germanic/icons/smithy.png"
-})
-
-DefineIcon({
 	Name = "icon-peasant",
 	Size = {46, 38},
-	File = Wyrmsun .. "graphics/germanic/icons/worker.png"
+	File = "human/icons/worker.png"
 })
 
 DefineIcon({
 	Name = "icon-footman",
 	Size = {46, 38},
-	File = Wyrmsun .. "graphics/germanic/icons/warrior.png"
+	File = "human/icons/javelineer.png"
 })
 
 DefineIcon({
 	Name = "icon-archer",
 	Size = {46, 38},
-	File = Wyrmsun .. "graphics/germanic/icons/archer.png"
+	File = "human/icons/archer.png"
 })
 
 DefineIcon({
 	Name = "icon-ranger",
 	Size = {46, 38},
-	File = Wyrmsun .. "graphics/germanic/icons/archer_blond_hair.png"
+	File = "human/icons/archer_blond_hair.png"
 })
 
 DefineIcon({
-	Name = "icon-great-hall",
+	Name = "icon-knight",
 	Size = {46, 38},
-	File = Wyrmsun .. "graphics/goblin/icons/town_hall.png"
+	File = "human/icons/ritter.png"
 })
 
 DefineIcon({
-	Name = "icon-orc-barracks",
+	Name = "icon-ballista",
 	Size = {46, 38},
-	File = Wyrmsun .. "graphics/goblin/icons/mess_hall.png"
+	File = "human/icons/catapult.png"
 })
 
 DefineIcon({
-	Name = "icon-pig-farm",
+	Name = "icon-catapult",
 	Size = {46, 38},
-	File = Wyrmsun .. "graphics/goblin/icons/farm.png"
-})
-
-DefineIcon({
-	Name = "icon-troll-lumber-mill",
-	Size = {46, 38},
-	File = Wyrmsun .. "graphics/goblin/icons/lumber_mill.png"
-})
-
-DefineIcon({
-	Name = "icon-orc-blacksmith",
-	Size = {46, 38},
-	File = Wyrmsun .. "graphics/goblin/icons/smithy.png"
-})
-
-DefineIcon({
-	Name = "icon-human-shield1",
-	Size = {46, 38},
-	File = Wyrmsun .. "graphics/germanic/icons/wooden_oblong_shield.png"
-})
-
-DefineIcon({
-	Name = "icon-human-shield2",
-	Size = {46, 38},
-	File = Wyrmsun .. "graphics/germanic/icons/bronze_shield.png"
-})
-
-DefineIcon({
-	Name = "icon-human-shield3",
-	Size = {46, 38},
-	File = Wyrmsun .. "graphics/germanic/icons/bronze_shield_grayed.png"
-})
-
-DefineIcon({
-	Name = "icon-sword1",
-	Size = {46, 38},
-	File = Wyrmsun .. "graphics/germanic/icons/short_sword_extra_1.png"
-})
-
-DefineIcon({
-	Name = "icon-sword2",
-	Size = {46, 38},
-	File = Wyrmsun .. "graphics/germanic/icons/broad_sword.png"
-})
-
-DefineIcon({
-	Name = "icon-sword3",
-	Size = {46, 38},
-	File = Wyrmsun .. "graphics/germanic/icons/broad_sword_grayed.png"
-})
-
-DefineIcon({
-	Name = "icon-move-peasant",
-	Size = {46, 38},
-	File = Wyrmsun .. "graphics/dwarf/icons/boots.png"
-})
-
-DefineIcon({
-	Name = "icon-repair",
-	Size = {46, 38},
-	File = Wyrmsun .. "graphics/neutral/icons/repair.png"
-})
-
-DefineIcon({
-	Name = "icon-harvest",
-	Size = {46, 38},
-	File = Wyrmsun .. "graphics/neutral/icons/harvest.png"
-})
-
-DefineIcon({
-	Name = "icon-human-attack-ground",
-	Size = {46, 38},
-	File = Wyrmsun .. "graphics/neutral/icons/attack_ground.png"
-})
-
-DefineIcon({
-	Name = "icon-human-shipyard",
-	Size = {46, 38},
-	File = Wyrmsun .. "graphics/teuton/icons/dock.png"
+	File = "wild/icons/goblin_war_machine.png"
 })
 
 DefineIcon({
 	Name = "icon-human-destroyer",
 	Size = {46, 38},
-	File = Wyrmsun .. "graphics/teuton/icons/kogge.png"
+	File = "human/icons/kogge.png"
 })
 
 DefineIcon({
 	Name = "icon-human-transport",
 	Size = {46, 38},
-	File = Wyrmsun .. "graphics/dwarf/icons/transport.png"
+	File = "human/icons/transport.png"
+})
+
+DefineIcon({
+	Name = "icon-peon",
+	Size = {46, 38},
+	File = "wild/icons/goblin_worker.png"
+})
+
+DefineIcon({
+	Name = "icon-grunt",
+	Size = {46, 38},
+	File = "wild/icons/warrior.png"
+})
+
+DefineIcon({
+	Name = "icon-axethrower",
+	Size = {46, 38},
+	File = "wild/icons/spearthrower.png"
+})
+
+DefineIcon({
+	Name = "icon-berserker",
+	Size = {46, 38},
+	File = "wild/icons/hunter.png"
+})
+
+DefineIcon({
+	Name = "icon-skeleton",
+	Size = {46, 38},
+	File = "wild/icons/skeleton.png"
+})
+
+DefineIcon({
+	Name = "icon-zeppelin",
+	Size = {46, 38},
+	File = "wild/icons/glider.png"
+})
+
+DefineIcon({
+	Name = "icon-death-knight",
+	Size = {46, 38},
+	File = "wild/icons/geomancer.png"
+})
+
+DefineIcon({
+	Name = "icon-mage",
+	Size = {46, 38},
+	File = "human/icons/gnomish_herbalist.png"
+})
+
+DefineIcon({
+	Name = "icon-ugly-guy",
+	Size = {46, 38},
+	File = "human/icons/long_swordsman.png"
 })
 
 if (wargus.tileset == nil) then

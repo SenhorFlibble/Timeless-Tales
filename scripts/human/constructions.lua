@@ -34,9 +34,9 @@
 --	    'size '(x y))
 
 local files = {summer = "human/buildings/shipyard_construction_site.png",
-  winter = "tilesets/winter/human/buildings/shipyard_construction_site.png",
+  winter = "human/buildings/shipyard_construction_site.png",
   wasteland = "human/buildings/shipyard_construction_site.png",
-  swamp = "tilesets/swamp/human/buildings/shipyard_construction_site.png"}
+  swamp = "human/buildings/shipyard_construction_site.png"}
 
 DefineConstruction("construction-human-shipyard", {
   Files = {
@@ -54,10 +54,10 @@ DefineConstruction("construction-human-shipyard", {
     Frame = 1}}
 })
 
-local files = {summer = "tilesets/summer/human/buildings/oil_well_construction_site.png",
-  winter = "tilesets/winter/human/buildings/oil_well_construction_site.png",
-  wasteland = "tilesets/wasteland/human/buildings/oil_well_construction_site.png",
-  swamp = "tilesets/swamp/human/buildings/oil_platform_construction_site.png"}
+local files = {summer = "human/buildings/oil_platform_construction_site.png",
+  winter = "human/buildings/oil_platform_construction_site.png",
+  wasteland = "human/buildings/oil_platform_construction_site.png",
+  swamp = "human/buildings/oil_platform_construction_site.png"}
 
 DefineConstruction("construction-human-oil-well", {
   Files = {
@@ -76,9 +76,9 @@ DefineConstruction("construction-human-oil-well", {
 })
 
 local files = {summer = "human/buildings/refinery_construction_site.png",
-  winter = "tilesets/winter/human/buildings/refinery_construction_site.png",
+  winter = "human/buildings/refinery_construction_site.png",
   wasteland = "human/buildings/refinery_construction_site.png",
-  swamp = "tilesets/swamp/human/buildings/refinery_construction_site.png"}
+  swamp = "human/buildings/refinery_construction_site.png"}
 
 DefineConstruction("construction-human-refinery", {
   Files = {
@@ -97,9 +97,9 @@ DefineConstruction("construction-human-refinery", {
 })
 
 local files = {summer = "human/buildings/foundry_construction_site.png",
-  winter = "tilesets/winter/human/buildings/foundry_construction_site.png",
+  winter = "human/buildings/foundry_construction_site.png",
   wasteland = "human/buildings/foundry_construction_site.png",
-  swamp = "tilesets/swamp/human/buildings/foundry_construction_site.png"}
+  swamp = "human/buildings/foundry_construction_site.png"}
 
 DefineConstruction("construction-human-foundry", {
   Files = {

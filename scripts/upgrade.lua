@@ -29,7 +29,7 @@
 
 -- Load the different races
 Load("scripts/human/upgrade.lua")
-Load("scripts/orc/upgrade.lua")
+Load("scripts/wild/upgrade.lua")
 Load("scripts/caanoo/upgrade.lua")
 
 function DefineAllowSpecialUnits(flags)

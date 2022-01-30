@@ -31,12 +31,12 @@ UnitTypeFiles = {}
 
 -- Load the animations for the units.
 Load("scripts/anim.lua")
-Load(Wyrmsun .. "scripts/anim.lua")
-Load(Wyrmsun .. "scripts/civilizations/dwarf/anim.lua")
-Load(Wyrmsun .. "scripts/civilizations/germanic/anim.lua")
-Load(Wyrmsun .. "scripts/civilizations/gnome/anim.lua")
-Load(Wyrmsun .. "scripts/civilizations/goblin/anim.lua")
-Load(Wyrmsun .. "scripts/civilizations/teuton/anim.lua")
+-- Load(Wyrmsun .. "scripts/anim.lua")
+-- Load(Wyrmsun .. "scripts/civilizations/dwarf/anim.lua")
+-- Load(Wyrmsun .. "scripts/civilizations/germanic/anim.lua")
+-- Load(Wyrmsun .. "scripts/civilizations/gnome/anim.lua")
+-- Load(Wyrmsun .. "scripts/civilizations/goblin/anim.lua")
+-- Load(Wyrmsun .. "scripts/civilizations/teuton/anim.lua")
 
 --=============================================================================
 --	Define unit-types.
@@ -289,14 +289,8 @@ DefineUnitType("unit-circle-of-power", { Name = _("Circle of Power"),
     "help", "basic human voices help 2",
     "dead", "building destroyed"} } )
 
-
-UnitTypeFiles["unit-dark-portal"] = {summer = "tilesets/summer/neutral/buildings/dark_portal.png",
-  winter = "tilesets/winter/neutral/buildings/dark_portal.png",
-  wasteland = "tilesets/wasteland/neutral/buildings/dark_portal.png",
-  swamp = "tilesets/swamp/neutral/buildings/dark_portal.png"}
-
-DefineUnitType("unit-dark-portal", { Name = _("Dark Portal"),
-  Image = {"size", {128, 128}},
+DefineUnitType("unit-dark-portal", { Name = _("Dimensional Gate"),
+  Image = {"file", "neutral/buildings/dark_portal.png", "size", {128, 128}},
   Animations = "animations-building", Icon = "icon-dark-portal",
   NeutralMinimapColor = {255, 255, 0},
   Costs = {"time", 100, "gold", 3000, "wood", 3000, "oil", 1000},
@@ -358,8 +352,51 @@ DefineUnitType("unit-runestone", { Name = _("Runestone"),
     "dead", "building destroyed"} } )
 
 DefineUnitType("unit-human-dead-body", { Name = _("Dead Body"),
-  Image = {"file", Wyrmsun .. "graphics/neutral/units/human_corpse.png", "size", {72, 72}},
-  Animations = "animations-human-dead-body", Icon = "icon-peasant",
+  Image = {"file", "neutral/units/human_corpse.png", "size", {72, 72}},
+--  Animations = "animations-human-dead-body", Icon = "icon-peasant",
+  Animations = "animations-dwarven-dead-body", Icon = "icon-peasant",
+  Speed = 0,
+  HitPoints = 255,
+  DrawLevel = 30,
+  TileSize = {1, 1}, BoxSize = {31, 31},
+  SightRange = 1,
+  BasicDamage = 0, PiercingDamage = 0, Missile = "missile-none",
+  Priority = 0,
+  Type = "land",
+  Vanishes = true,
+  Sounds = {} } )
+
+DefineUnitType("unit-dwarven-dead-body", { Name = _("Dead Body"),
+  Image = {"file", "neutral/units/dwarven_corpse.png", "size", {72, 72}},
+  Animations = "animations-dwarven-dead-body", Icon = "icon-peasant",
+  Speed = 0,
+  HitPoints = 255,
+  DrawLevel = 30,
+  TileSize = {1, 1}, BoxSize = {31, 31},
+  SightRange = 1,
+  BasicDamage = 0, PiercingDamage = 0, Missile = "missile-none",
+  Priority = 0,
+  Type = "land",
+  Vanishes = true,
+  Sounds = {} } )
+
+DefineUnitType("unit-gnomish-dead-body", { Name = _("Dead Body"),
+  Image = {"file", "neutral/units/gnomish_goblin_and_kobold_corpses.png", "size", {72, 72}},
+  Animations = "animations-gnomish-dead-body", Icon = "icon-peasant",
+  Speed = 0,
+  HitPoints = 255,
+  DrawLevel = 30,
+  TileSize = {1, 1}, BoxSize = {31, 31},
+  SightRange = 1,
+  BasicDamage = 0, PiercingDamage = 0, Missile = "missile-none",
+  Priority = 0,
+  Type = "land",
+  Vanishes = true,
+  Sounds = {} } )
+
+DefineUnitType("unit-goblin-dead-body", { Name = _("Dead Body"),
+  Image = {"file", "neutral/units/gnomish_goblin_and_kobold_corpses.png", "size", {72, 72}},
+  Animations = "animations-goblin-dead-body", Icon = "icon-peasant",
   Speed = 0,
   HitPoints = 255,
   DrawLevel = 30,
@@ -374,6 +411,34 @@ DefineUnitType("unit-human-dead-body", { Name = _("Dead Body"),
 DefineUnitType("unit-orc-dead-body", { Name = _("Dead Body"),
   Image = {"file", "neutral/units/corpses.png", "size", {72, 72}},
   Animations = "animations-orc-dead-body", Icon = "icon-peasant",
+  Speed = 0,
+  HitPoints = 255,
+  DrawLevel = 30,
+  TileSize = {1, 1}, BoxSize = {31, 31},
+  SightRange = 1,
+  BasicDamage = 0, PiercingDamage = 0, Missile = "missile-none",
+  Priority = 0,
+  Type = "land",
+  Vanishes = true,
+  Sounds = {} } )
+
+DefineUnitType("unit-hobgoblin-body", { Name = _("Dead Hobgoblin Warrior"),
+  Image = {"file", "neutral/units/warrior_corpse.png", "size", {116, 116}},
+  Animations = "animations-dwarven-dead-body", Icon = "icon-peasant",
+  Speed = 0,
+  HitPoints = 255,
+  DrawLevel = 30,
+  TileSize = {1, 1}, BoxSize = {31, 31},
+  SightRange = 1,
+  BasicDamage = 0, PiercingDamage = 0, Missile = "missile-none",
+  Priority = 0,
+  Type = "land",
+  Vanishes = true,
+  Sounds = {} } )
+
+DefineUnitType("unit-orc-body", { Name = _("Dead Spear Thrower"),
+  Image = {"file", "neutral/units/orc_corpse.png", "size", {132, 132}},
+  Animations = "animations-dwarven-dead-body", Icon = "icon-peasant",
   Speed = 0,
   HitPoints = 255,
   DrawLevel = 30,
@@ -520,7 +585,7 @@ DefineUnitType("unit-revealer", { Name = _("Dummy unit"),
  
 -- Load the different races
 Load("scripts/human/units.lua")
-Load("scripts/orc/units.lua")
+Load("scripts/wild/units.lua")
 Load("scripts/caanoo/units.lua")
 
 -- Hardcoded unit-types, moved from Stratagus to games

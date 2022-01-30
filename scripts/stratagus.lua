@@ -173,7 +173,7 @@ SetClickMissile("missile-green-cross")
 --  Uncomment next, to reveal the complete map.
 --RevealMap()
 
-SetFogOfWarGraphics(Wyrmsun .. "graphics/tilesets/fogofwar.png")
+SetFogOfWarGraphics("tilesets/fogofwar.png")
 
 -------------------------------------------------------------------------------
 

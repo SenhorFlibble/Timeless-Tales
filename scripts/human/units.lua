@@ -33,8 +33,8 @@
 --	NOTE: Save can generate this table.
 --
 
-DefineUnitType("unit-footman", { Name = _("Footman"),
-  Image = {"file", Wyrmsun .. "/graphics/germanic/units/young_warrior.png", "size", {72, 72}},
+DefineUnitType("unit-footman", { Name = _("Infantryman"),
+  Image = {"file", "human/units/legionary.png", "size", {72, 72}},
   Animations = "animations-footman", Icon = "icon-footman",
   Costs = {"time", 60, "gold", 600},
   Speed = 10,
@@ -62,8 +62,8 @@ DefineUnitType("unit-footman", { Name = _("Footman"),
     "help", "basic human voices help 1",
     "dead", "basic human voices dead"} } )
 
-DefineUnitType("unit-peasant", { Name = _("Peasant"),
-  Image = {"file", Wyrmsun .. "/graphics/germanic/units/worker.png", "size", {72, 72}},
+DefineUnitType("unit-peasant", { Name = _("Worker"),
+  Image = {"file", "human/units/worker.png", "size", {72, 72}},
   DrawLevel = 19,
   Animations = "animations-peasant", Icon = "icon-peasant",
   Costs = {"time", 45, "gold", 400},
@@ -86,13 +86,13 @@ DefineUnitType("unit-peasant", { Name = _("Peasant"),
   LandUnit = true,
   Coward = true,
   CanGatherResources = {
-   {"file-when-loaded", Wyrmsun .. "/graphics/germanic/units/worker_with_gold.png",
+   {"file-when-loaded", "human/units/worker_with_gold.png",
     "resource-id", "gold",
 --    "harvest-from-outside",
     "resource-capacity", 100,
     "wait-at-resource", 150,
     "wait-at-depot", 150},
-   {"file-when-loaded", Wyrmsun .. "/graphics/germanic/units/worker_with_lumber.png",
+   {"file-when-loaded", "human/units/worker_with_lumber.png",
     "resource-id", "wood",
     "resource-capacity", 100,
     "resource-step", 2,
@@ -109,7 +109,7 @@ DefineUnitType("unit-peasant", { Name = _("Peasant"),
     "dead", "basic human voices dead"} } )
 
 DefineUnitType("unit-attack-peasant", { Name = _("Minuteman"),
-  Image = {"file", Wyrmsun .. "/graphics/germanic/units/militia.png", "size", {72, 72}},
+  Image = {"file", "human/units/militia.png", "size", {72, 72}},
   DrawLevel = 19,
   Animations = "animations-peasant", Icon = "icon-peasant",
   Costs = {"time", 45, "gold", 400},
@@ -138,8 +138,8 @@ DefineUnitType("unit-attack-peasant", { Name = _("Minuteman"),
     "help", "basic human voices help 1",
     "dead", "basic human voices dead"} } )
 
-DefineUnitType("unit-ballista", { Name = _("Ballista"),
-  Image = {"file", Wyrmsun .. "/graphics/dwarf/units/dwarven_ballista.png", "size", {64, 64}},
+DefineUnitType("unit-ballista", { Name = _("Catapult"),
+  Image = {"file", "human/units/catapult.png", "size", {72, 72}},
   Animations = "animations-ballista", Icon = "icon-ballista",
   Costs = {"time", 250, "gold", 900, "wood", 300},
   Speed = 5,
@@ -147,7 +147,7 @@ DefineUnitType("unit-ballista", { Name = _("Ballista"),
   DrawLevel = 40,
   TileSize = {1, 1}, BoxSize = {63, 63},
   SightRange = 9, ComputerReactionRange = 11, PersonReactionRange = 9,
-  Armor = 5, BasicDamage = 80, PiercingDamage = 0, Missile = "missile-ballista-bolt",
+  Armor = 5, BasicDamage = 80, PiercingDamage = 0, Missile = "missile-catapult-rock",
   MinAttackRange = 2, MaxAttackRange = 8,
   Priority = 70,
   Points = 100,
@@ -166,8 +166,8 @@ DefineUnitType("unit-ballista", { Name = _("Ballista"),
     "help", "basic human voices help 1",
     "dead", "explosion"} } )
 	
-DefineUnitType("unit-ballista-super", { Name = _("Ballista"),
-  Image = {"file", Wyrmsun .. "/graphics/dwarf/units/dwarven_ballista.png", "size", {64, 64}},
+DefineUnitType("unit-ballista-super", { Name = _("Catapult"),
+  Image = {"file", "human/units/catapult.png", "size", {72, 72}},
   Animations = "animations-ballista", Icon = "icon-ballista",
   Costs = {"time", 250, "gold", 900, "wood", 300},
   Speed = 0,
@@ -175,7 +175,7 @@ DefineUnitType("unit-ballista-super", { Name = _("Ballista"),
   DrawLevel = 40,
   TileSize = {1, 1}, BoxSize = {63, 63},
   SightRange = 10, ComputerReactionRange = 11, PersonReactionRange = 10,
-  BasicDamage = 80, PiercingDamage = 0, Missile = "missile-ballista-bolt",
+  BasicDamage = 80, PiercingDamage = 0, Missile = "missile-catapult-rock",
   MinAttackRange = 4, MaxAttackRange = 10,
   Priority = 72,
   Points = 200,
@@ -195,7 +195,7 @@ DefineUnitType("unit-ballista-super", { Name = _("Ballista"),
     "dead", "explosion"} } )
 
 DefineUnitType("unit-knight", { Name = _("Knight"),
-  Image = {"file", "human/units/knight.png", "size", {72, 72}},
+  Image = {"file", "human/units/ritter_2.png", "size", {72, 72}},
   Animations = "animations-knight", Icon = "icon-knight",
   Costs = {"time", 90, "gold", 800, "wood", 100},
   Speed = 13,
@@ -224,8 +224,8 @@ DefineUnitType("unit-knight", { Name = _("Knight"),
     "dead", "basic human voices dead"} } )
 
 DefineUnitType("unit-archer", { Name = _("Archer"),
-  Image = {"file", Wyrmsun .. "/graphics/germanic/units/archer.png", "size", {72, 72}},
-  Animations = "animations-goblin-archer", Icon = "icon-archer",
+  Image = {"file", "human/units/archer.png", "size", {72, 72}},
+  Animations = "animations-human-archer", Icon = "icon-archer",
   Costs = {"time", 70, "gold", 500, "wood", 50},
   Speed = 10,
   HitPoints = 40,
@@ -252,8 +252,8 @@ DefineUnitType("unit-archer", { Name = _("Archer"),
     "help", "basic human voices help 1",
     "dead", "basic human voices dead"} } )
 
-DefineUnitType("unit-mage", { Name = _("Mage"),
-  Image = {"file", Wyrmsun .. "/graphics/gnome/units/gnomish_herbalist_gray_hair.png", "size", {72, 72}},
+DefineUnitType("unit-mage", { Name = _("Wizard"),
+  Image = {"file", "human/units/gnomish_herbalist_gray_hair.png", "size", {72, 72}},
   Animations = "animations-mage", Icon = "icon-mage",
   Costs = {"time", 120, "gold", 1200},
   Speed = 8,
@@ -289,7 +289,7 @@ DefineUnitType("unit-mage", { Name = _("Mage"),
 	"help", "basic human voices help 1",
 	"dead", "basic human voices dead"} } )
 
-DefineUnitType("unit-paladin", { Name = _("Paladin"),
+DefineUnitType("unit-paladin", { Name = _("Templar"),
   Image = {"file", "human/units/knight.png", "size", {72, 72}},
   Animations = "animations-paladin", Icon = "icon-paladin",
   Costs = {"time", 90, "gold", 800, "wood", 100},
@@ -321,8 +321,8 @@ DefineUnitType("unit-paladin", { Name = _("Paladin"),
     "help", "basic human voices help 1",
     "dead", "basic human voices dead"} } )
 
-DefineUnitType("unit-dwarves", { Name = _("Dwarves"),
-  Image = {"file", "human/units/dwarven_demolition_squad.png", "size", {56, 56}},
+DefineUnitType("unit-dwarves", { Name = _("Demolition Cart"),
+  Image = {"file", "human/units/cart.png", "size", {56, 56}},
   Animations = "animations-dwarves", Icon = "icon-dwarves",
   Costs = {"time", 200, "gold", 700, "wood", 250},
   Speed = 11,
@@ -352,8 +352,8 @@ DefineUnitType("unit-dwarves", { Name = _("Dwarves"),
     "dead", "explosion"} } )
 
 DefineUnitType("unit-ranger", { Name = _("Ranger"),
-  Image = {"file", Wyrmsun .. "/graphics/germanic/units/archer_gray_hair.png", "size", {72, 72}},
-  Animations = "animations-goblin-archer", Icon = "icon-ranger",
+  Image = {"file", "human/units/archer_blond_hair.png", "size", {72, 72}},
+  Animations = "animations-human-archer", Icon = "icon-ranger",
   Costs = {"time", 70, "gold", 500, "wood", 50},
   Level = 2,
   Speed = 10,
@@ -381,8 +381,8 @@ DefineUnitType("unit-ranger", { Name = _("Ranger"),
     "help", "basic human voices help 1",
     "dead", "basic human voices dead"} } )
 
-DefineUnitType("unit-female-hero", { Name = _("Alleria"),
-  Image = {"file", Wyrmsun .. "/graphics/germanic/units/archer_blond_hair.png", "size", {72, 72}},
+DefineUnitType("unit-female-hero", { Name = _("Tomoe"),
+  Image = {"file", "human/units/archer_blond_hair.png", "size", {72, 72}},
   Animations = "animations-female-hero", Icon = "icon-female-hero",
   Costs = {"time", 70, "gold", 500, "wood", 50},
   Speed = 10,
@@ -410,8 +410,8 @@ DefineUnitType("unit-female-hero", { Name = _("Alleria"),
     "help", "basic human voices help 1",
     "dead", "basic human voices dead"} } )
 
-DefineUnitType("unit-gryphon-rider", { Name = _("Gryphon Rider"),
-  Image = {"file", Wyrmsun .. "/graphics/dwarf/units/gryphon_rider.png", "size", {100, 100}},
+DefineUnitType("unit-gryphon-rider", { Name = _("Grand Eagle"),
+  Image = {"file", "human/units/eagle.png", "size", {80, 80}},
   DrawLevel = 45,
   Animations = "animations-gryphon-rider", Icon = "icon-gryphon-rider",
   Costs = {"time", 250, "gold", 2500},
@@ -440,8 +440,8 @@ DefineUnitType("unit-gryphon-rider", { Name = _("Gryphon Rider"),
     "help", "basic human voices help 1",
     "dead", "basic human voices dead"} } )
 
-DefineUnitType("unit-flying-angel", { Name = _("Kurdan and Sky'ree"),
-  Image = {"file", Wyrmsun .. "/graphics/dwarf/units/gryphon_rider_brown_hair_blue_feathers.png", "size", {100, 100}},
+DefineUnitType("unit-flying-angel", { Name = _("Grand Eagle Hero"),
+  Image = {"file", "human/units/eagle.png", "size", {80, 80}},
   DrawLevel = 45,
   Animations = "animations-flying-angel", Icon = "icon-flying-angel",
   Costs = {"time", 250, "gold", 2500},
@@ -470,7 +470,7 @@ DefineUnitType("unit-flying-angel", { Name = _("Kurdan and Sky'ree"),
     "help", "basic human voices help 1",
     "dead", "basic human voices dead"} } )
 
-DefineUnitType("unit-white-mage", { Name = _("Khadgar"),
+DefineUnitType("unit-white-mage", { Name = _("Wizard Hero"),
   Image = {"file", "human/units/mage.png", "size", {72, 72}},
   Animations = "animations-white-mage", Icon = "icon-white-mage",
   Costs = {"time", 120, "gold", 1200},
@@ -542,7 +542,7 @@ DefineUnitType("unit-human-oil-tanker", { Name = _("Oil tanker"),
     "dead", "ship sinking"} } )
 
 DefineUnitType("unit-human-transport", { Name = _("Transport"),
-  Image = {"file", Wyrmsun ..  "graphics/dwarf/units/transport.png", "size", {72, 72}},
+  Image = {"file", "human/units/transport.png", "size", {72, 72}},
   Animations = "animations-human-transport", Icon = "icon-human-transport",
   Costs = {"time", 70, "gold", 600, "wood", 200, "oil", 500},
   RepairHp = 4,
@@ -571,8 +571,8 @@ DefineUnitType("unit-human-transport", { Name = _("Transport"),
     "help", "basic human voices help 1",
     "dead", "ship sinking"} } )
 
-DefineUnitType("unit-human-destroyer", { Name = _("Cog"),
-  Image = {"file", Wyrmsun ..  "graphics/teuton/units/kogge.png", "size", {72, 72}},
+DefineUnitType("unit-human-destroyer", { Name = _("Frigate"),
+  Image = {"file", "human/units/kogge.png", "size", {72, 72}},
   Animations = "animations-elven-destroyer", Icon = "icon-human-destroyer",
   Costs = {"time", 90, "gold", 700, "wood", 350, "oil", 700},
   Speed = 10,
@@ -600,7 +600,7 @@ DefineUnitType("unit-human-destroyer", { Name = _("Cog"),
     "help", "basic human voices help 1",
     "dead", "ship sinking"} } )
 
-DefineUnitType("unit-battleship", { Name = _("Battleship"),
+DefineUnitType("unit-battleship", { Name = _("Galleon"),
   Image = {"file", "human/units/battleship.png", "size", {88, 88}},
   Animations = "animations-battleship", Icon = "icon-battleship",
   Costs = {"time", 140, "gold", 1000, "wood", 500, "oil", 1000},
@@ -629,14 +629,8 @@ DefineUnitType("unit-battleship", { Name = _("Battleship"),
     "help", "basic human voices help 1",
     "dead", "ship sinking"} } )
 
-
-UnitTypeFiles["unit-human-submarine"] = {summer = "human/units/gnomish_submarine.png",
-  winter = "human/units/gnomish_submarine.png",
-  wasteland = "tilesets/wasteland/human/units/gnomish_submarine.png",
-  swamp = "tilesets/swamp/human/units/gnomish_submarine.png"}
-
-DefineUnitType("unit-human-submarine", { Name = _("Gnomish Submarine"),
-  Image = {"size", {72, 72}},
+DefineUnitType("unit-human-submarine", { Name = _("Beast of Depths"),
+  Image = {"file", "human/units/gnomish_submarine.png","size", {72, 72}},
   Animations = "animations-gnomish-submarine", Icon = "icon-gnomish-submarine",
   Costs = {"time", 100, "gold", 800, "wood", 150, "oil", 900},
   Speed = 7,
@@ -665,7 +659,7 @@ DefineUnitType("unit-human-submarine", { Name = _("Gnomish Submarine"),
     "help", "basic human voices help 1",
     "dead", "ship sinking"} } )
 
-DefineUnitType("unit-balloon", { Name = _("Gnomish Flying Machine"),
+DefineUnitType("unit-balloon", { Name = _("Flying Machine"),
   Image = {"file", "human/units/gnomish_flying_machine.png", "size", {80, 80}},
   Animations = "animations-balloon", Icon = "icon-gnomish-flying-machine",
   Costs = {"time", 65, "gold", 500, "wood", 100},
@@ -691,7 +685,7 @@ DefineUnitType("unit-balloon", { Name = _("Gnomish Flying Machine"),
     "help", "basic human voices help 1",
     "dead", "explosion"} } )
 
-DefineUnitType("unit-knight-rider", { Name = _("Turalyon"),
+DefineUnitType("unit-knight-rider", { Name = _("Grandmaster Templar"),
   Image = {"file", "human/units/knight.png", "size", {72, 72}},
   Animations = "animations-knight-rider", Icon = "icon-knight-rider",
   Costs = {"time", 90, "gold", 800, "wood", 100},
@@ -722,8 +716,8 @@ DefineUnitType("unit-knight-rider", { Name = _("Turalyon"),
     "help", "basic human voices help 1",
     "dead", "basic human voices dead"} } )
 
-DefineUnitType("unit-arthor-literios", { Name = _("Danath"),
-  Image = {"file", Wyrmsun .. "/graphics/germanic/units/old_man.png", "size", {72, 72}},
+DefineUnitType("unit-arthor-literios", { Name = _("Arthor Literios"),
+  Image = {"file", "human/units/arthor.png", "size", {72, 72}},
   Animations = "animations-arthor-literios", Icon = "icon-ugly-guy",
   Costs = {"time", 60, "gold", 600},
   Speed = 10,
@@ -751,7 +745,7 @@ DefineUnitType("unit-arthor-literios", { Name = _("Danath"),
     "help", "basic human voices help 1",
     "dead", "basic human voices dead"} } )
 
-DefineUnitType("unit-wise-man", { Name = _("Lothar"),
+DefineUnitType("unit-wise-man", { Name = _("Wise Man"),
   Image = {"file", "human/units/knight.png", "size", {72, 72}},
   Animations = "animations-wise-man", Icon = "icon-wise-man",
   Costs = {"time", 100, "gold", 900, "wood", 100},
@@ -783,7 +777,7 @@ DefineUnitType("unit-wise-man", { Name = _("Lothar"),
     "help", "basic human voices help 1",
     "dead", "basic human voices dead"} } )
 
-DefineUnitType("unit-man-of-light", { Name = _("Uther Lightbringer"),
+DefineUnitType("unit-man-of-light", { Name = _("Man of Light"),
   Image = {"file", "human/units/knight.png", "size", {72, 72}},
   Animations = "animations-man-of-light", Icon = "icon-man-of-light",
   Costs = {"time", 100, "gold", 900, "wood", 100},
@@ -815,8 +809,8 @@ DefineUnitType("unit-man-of-light", { Name = _("Uther Lightbringer"),
     "help", "basic human voices help 1",
     "dead", "basic human voices dead"} } )
 
-DefineUnitType("unit-farm", { Name = _("Farm"),
-  Image = {"file", Wyrmsun ..  "graphics/germanic/buildings/farm.png", "size", {64, 64}},
+DefineUnitType("unit-farm", { Name = _("Farmhouse"),
+  Image = {"file", "human/buildings/farmhouse.png", "size", {64, 64}},
   Animations = "animations-building", Icon = "icon-farm",
   Costs = {"time", 100, "gold", 500, "wood", 250},
   RepairHp = 4,
@@ -843,7 +837,7 @@ DefineUnitType("unit-farm", { Name = _("Farm"),
     "dead", "building destroyed"} } )
 
 DefineUnitType("unit-human-barracks", { Name = _("Barracks"),
-  Image = {"file", Wyrmsun ..  "graphics/germanic/buildings/barracks.png", "size", {96, 96}},
+  Image = {"file", "human/buildings/barracks.png", "size", {96, 96}},
   Animations = "animations-building", Icon = "icon-human-barracks",
   Costs = {"time", 200, "gold", 700, "wood", 450},
   RepairHp = 4,
@@ -868,14 +862,8 @@ DefineUnitType("unit-human-barracks", { Name = _("Barracks"),
     "help", "basic human voices help 2",
     "dead", "building destroyed"} } )
 
-
-UnitTypeFiles["unit-church"] = {summer = "tilesets/summer/human/buildings/church.png",
-  winter = "tilesets/winter/human/buildings/church.png",
-  wasteland = "tilesets/summer/human/buildings/church.png",
-  swamp = "tilesets/swamp/human/buildings/church.png"}
-
-DefineUnitType("unit-church", { Name = _("Church"),
-  Image = {"size", {96, 96}},
+DefineUnitType("unit-church", { Name = _("Cathedral"),
+  Image = {"file", "human/buildings/cathedral.png", "size", {96, 96}},
   Animations = "animations-building", Icon = "icon-church",
   Costs = {"time", 175, "gold", 900, "wood", 500},
   RepairHp = 4,
@@ -900,9 +888,8 @@ DefineUnitType("unit-church", { Name = _("Church"),
     "help", "basic human voices help 2",
     "dead", "building destroyed"} } )
 
-DefineUnitType("unit-human-watch-tower", { Name = _("Scout Tower"),
-  Image = {"file", Wyrmsun ..  "graphics/teuton/buildings/watch_tower.png", "size", {64, 64}},
-  --Shadow = {"file", Wyrmsun ..  "graphics/teuton/buildings/watch_tower_shadow.png", "size", {64, 64}},
+DefineUnitType("unit-human-watch-tower", { Name = _("Lookout Tower"),
+  Image = {"file", "human/buildings/outpost.png", "size", {64, 64}},
   Animations = "animations-building", Icon = "icon-human-watch-tower",
   Costs = {"time", 60, "gold", 550, "wood", 200},
   RepairHp = 4,
@@ -955,8 +942,8 @@ DefineUnitType("unit-stables", { Name = _("Stables"),
     "help", "basic human voices help 2",
     "dead", "building destroyed"} } )
 
-DefineUnitType("unit-inventor", { Name = _("Laboratory"),
-  Image = {"file", Wyrmsun ..  "graphics/gnome/buildings/barracks.png", "size", {96, 96}},
+DefineUnitType("unit-inventor", { Name = _("Machinery Workshop"),
+  Image = {"file", "human/buildings/workshop.png", "size", {96, 96}},
   Animations = "animations-building", Icon = "icon-gnomish-inventor",
   Costs = {"time", 150, "gold", 1000, "wood", 400},
   RepairHp = 4,
@@ -981,14 +968,8 @@ DefineUnitType("unit-inventor", { Name = _("Laboratory"),
     "help", "basic human voices help 2",
     "dead", "building destroyed"} } )
 
-
-UnitTypeFiles["unit-gryphon-aviary"] = {summer = "tilesets/summer/human/buildings/gryphon_aviary.png",
-  winter = "tilesets/winter/human/buildings/gryphon_aviary.png",
-  wasteland = "tilesets/summer/human/buildings/gryphon_aviary.png",
-  swamp = "tilesets/swamp/human/buildings/gryphon_aviary.png"}
-
-DefineUnitType("unit-gryphon-aviary", { Name = _("Gryphon Aviary"),
-  Image = {"size", {96, 96}},
+DefineUnitType("unit-gryphon-aviary", { Name = _("Eagle Bastion"),
+  Image = {"file", "human/buildings/eagle_tower.png", "size", {96, 96}},
   Animations = "animations-building", Icon = "icon-gryphon-aviary",
   Costs = {"time", 150, "gold", 1000, "wood", 400},
   RepairHp = 4,
@@ -1014,7 +995,7 @@ DefineUnitType("unit-gryphon-aviary", { Name = _("Gryphon Aviary"),
     "dead", "building destroyed"} } )
 
 DefineUnitType("unit-human-shipyard", { Name = _("Shipyard"),
-  Image = {"file", Wyrmsun .. "graphics/teuton/buildings/dock.png", "size", {96, 96}},
+  Image = {"file", "human/buildings/shipyard.png", "size", {96, 96}},
   Animations = "animations-building", Icon = "icon-human-shipyard",
   Costs = {"time", 200, "gold", 800, "wood", 450},
   RepairHp = 4,
@@ -1047,8 +1028,8 @@ DefineUnitType("unit-human-shipyard", { Name = _("Shipyard"),
     "dead", "building destroyed"} } )
 
 
-DefineUnitType("unit-elven-lumber-mill", { Name = _("Carpenter's Shop"),
-  Image = {"file", Wyrmsun ..  "graphics/germanic/buildings/carpenters_shop.png", "size", {96, 96}},
+DefineUnitType("unit-elven-lumber-mill", { Name = _("Sawmill"),
+  Image = {"file", "human/buildings/sawmill.png", "size", {96, 96}},
   Animations = "animations-building", Icon = "icon-elven-lumber-mill",
   Costs = {"time", 150, "gold", 600, "wood", 450},
   RepairHp = 4,
@@ -1073,14 +1054,8 @@ DefineUnitType("unit-elven-lumber-mill", { Name = _("Carpenter's Shop"),
     "help", "basic human voices help 2",
     "dead", "building destroyed"} } )
 
-
-UnitTypeFiles["unit-human-foundry"] = {summer = "tilesets/summer/human/buildings/foundry.png",
-  winter = "tilesets/winter/human/buildings/foundry.png",
-  wasteland = "tilesets/summer/human/buildings/foundry.png",
-  swamp = "tilesets/swamp/human/buildings/foundry.png"}
-
-DefineUnitType("unit-human-foundry", { Name = _("Foundry"),
-  Image = {"size", {96, 96}},
+DefineUnitType("unit-human-foundry", { Name = _("Fleet Arsenal"),
+  Image = {"file", "human/buildings/foundry.png", "size", {96, 96}},
   Animations = "animations-building", Icon = "icon-human-foundry",
   Costs = {"time", 175, "gold", 700, "wood", 400, "oil", 400},
   RepairHp = 4,
@@ -1106,9 +1081,8 @@ DefineUnitType("unit-human-foundry", { Name = _("Foundry"),
     "help", "basic human voices help 2",
     "dead", "building destroyed"} } )
 
-DefineUnitType("unit-town-hall", { Name = _("Town Hall"),
-  Image = {"file", Wyrmsun ..  "graphics/germanic/buildings/town_hall.png", "size", {128, 128}},
-  --Shadow = {"file", Wyrmsun .. "graphics/germanic/buildings/town_hall_shadow.png", "size", {128, 128}},
+DefineUnitType("unit-town-hall", { Name = _("Council Hall"),
+  Image = {"file", "human/buildings/council_hall.png", "size", {128, 128}},
   Animations = "animations-building", Icon = "icon-town-hall",
   Costs = {"time", 255, "gold", 1200, "wood", 800},
   RepairHp = 4,
@@ -1138,14 +1112,8 @@ DefineUnitType("unit-town-hall", { Name = _("Town Hall"),
     "help", "basic human voices help 2",
     "dead", "building destroyed"} } )
 
-
-UnitTypeFiles["unit-mage-tower"] = {summer = "tilesets/summer/human/buildings/mage_tower.png",
-  winter = "tilesets/winter/human/buildings/mage_tower.png",
-  wasteland = "tilesets/summer/human/buildings/mage_tower.png",
-  swamp = "tilesets/swamp/human/buildings/mage_tower.png"}
-
 DefineUnitType("unit-mage-tower", { Name = _("Mage Tower"),
-  Image = {"size", {96, 96}},
+  Image = {"file", "human/buildings/mage_tower.png", "size", {96, 96}},
   Animations = "animations-building", Icon = "icon-mage-tower",
   Costs = {"time", 125, "gold", 1000, "wood", 200},
   RepairHp = 4,
@@ -1170,8 +1138,8 @@ DefineUnitType("unit-mage-tower", { Name = _("Mage Tower"),
     "help", "basic human voices help 2",
     "dead", "building destroyed"} } )
 
-DefineUnitType("unit-human-blacksmith", { Name = _("Blacksmith"),
-  Image = {"file", Wyrmsun ..  "graphics/germanic/buildings/smithy.png", "size", {96, 96}},
+DefineUnitType("unit-human-blacksmith", { Name = _("Smithy"),
+  Image = {"file", "human/buildings/smithy.png", "size", {96, 96}},
   Animations = "animations-building", Icon = "icon-human-blacksmith",
   Costs = {"time", 200, "gold", 800, "wood", 450, "oil", 100},
   RepairHp = 4,
@@ -1196,14 +1164,8 @@ DefineUnitType("unit-human-blacksmith", { Name = _("Blacksmith"),
     "help", "basic human voices help 2",
     "dead", "building destroyed"} } )
 
-
-UnitTypeFiles["unit-human-refinery"] = {summer = "tilesets/summer/human/buildings/refinery.png",
-  winter = "tilesets/winter/human/buildings/refinery.png",
-  wasteland = "tilesets/summer/human/buildings/refinery.png",
-  swamp = "tilesets/swamp/human/buildings/refinery.png"}
-
 DefineUnitType("unit-human-refinery", { Name = _("Refinery"),
-  Image = {"size", {96, 96}},
+  Image = {"file", "human/buildings/refinery.png", "size", {96, 96}},
   Animations = "animations-building", Icon = "icon-human-refinery",
   Costs = {"time", 225, "gold", 800, "wood", 350, "oil", 200},
   RepairHp = 4,
@@ -1236,14 +1198,8 @@ DefineUnitType("unit-human-refinery", { Name = _("Refinery"),
     "help", "basic human voices help 2",
     "dead", "building destroyed"} } )
 
-
-UnitTypeFiles["unit-human-oil-platform"] = {summer = "tilesets/summer/human/buildings/oil_platform.png",
-  winter = "tilesets/winter/human/buildings/oil_platform.png",
-  wasteland = "tilesets/wasteland/human/buildings/oil_platform.png",
-  swamp = "tilesets/swamp/human/buildings/oil_platform.png"}
-
 DefineUnitType("unit-human-oil-platform", { Name = _("Oil Platform"),
-  Image = {"size", {96, 96}},
+  Image = {"file", "human/buildings/oil_platform.png", "size", {96, 96}},
   Animations = "animations-oil-platform", Icon = "icon-human-oil-platform",
   Costs = {"time", 200, "gold", 700, "wood", 450},
   Construction = "construction-human-oil-well",
@@ -1268,14 +1224,8 @@ DefineUnitType("unit-human-oil-platform", { Name = _("Oil Platform"),
     "help", "basic human voices help 2",
     "dead", "building destroyed"} } )
 
-
-UnitTypeFiles["unit-keep"] = {summer = "tilesets/summer/human/buildings/keep.png",
-  winter = "tilesets/winter/human/buildings/keep.png",
-  wasteland = "tilesets/summer/human/buildings/keep.png",
-  swamp = "tilesets/swamp/human/buildings/keep.png"}
-
-DefineUnitType("unit-keep", { Name = _("Keep"),
-  Image = {"size", {128, 128}},
+DefineUnitType("unit-keep", { Name = _("Castle"),
+  Image = {"file", "human/buildings/castle.png", "size", {128, 128}},
   Animations = "animations-building", Icon = "icon-keep",
   Costs = {"time", 200, "gold", 2000, "wood", 1000, "oil", 200},
   RepairHp = 4,
@@ -1306,14 +1256,8 @@ DefineUnitType("unit-keep", { Name = _("Keep"),
     "help", "basic human voices help 2",
     "dead", "building destroyed"} } )
 
-
-UnitTypeFiles["unit-castle"] = {summer = "tilesets/summer/human/buildings/castle.png",
-  winter = "tilesets/winter/human/buildings/castle.png",
-  wasteland = "tilesets/summer/human/buildings/castle.png",
-  swamp = "tilesets/swamp/human/buildings/castle.png"}
-
-DefineUnitType("unit-castle", { Name = _("Castle"),
-  Image = {"size", {128, 128}},
+DefineUnitType("unit-castle", { Name = _("Citadel"),
+  Image = {"file", "human/buildings/citadel.png", "size", {128, 128}},
   Animations = "animations-building", Icon = "icon-castle",
   Costs = {"time", 200, "gold", 2500, "wood", 1200, "oil", 500},
   RepairHp = 4,
@@ -1366,8 +1310,7 @@ DefineUnitType("unit-human-start-location", { Name = _("Start Location"),
     "dead", "building destroyed"} } )
 
 DefineUnitType("unit-human-guard-tower", { Name = _("Archer Tower"),
-  Image = {"file", Wyrmsun ..  "graphics/teuton/buildings/watch_tower.png", "size", {64, 64}},
-  --Shadow = {"file", Wyrmsun ..  "graphics/teuton/buildings/watch_tower_shadow.png", "size", {64, 64}},
+  Image = {"file", "human/buildings/sentry_tower.png", "size", {64, 64}},
   Animations = "animations-human-guard-tower", Icon = "icon-human-guard-tower",
   Costs = {"time", 140, "gold", 500, "wood", 150},
   RepairHp = 4,
@@ -1395,8 +1338,7 @@ DefineUnitType("unit-human-guard-tower", { Name = _("Archer Tower"),
     "dead", "building destroyed"} } )
 
 DefineUnitType("unit-human-guard-tower-super", { Name = _("Guard Tower"),
-  Image = {"file", Wyrmsun ..  "graphics/teuton/buildings/watch_tower.png", "size", {64, 64}},
-  --Shadow = {"file", Wyrmsun ..  "graphics/teuton/buildings/watch_tower_shadow.png", "size", {64, 64}},
+  Image = {"file", "human/buildings/sentry_tower.png", "size", {64, 64}},
   Animations = "animations-human-guard-tower", Icon = "icon-human-guard-tower",
   Costs = {"time", 1400, "gold", 5000, "wood", 1500},
   RepairHp = 4,
@@ -1423,9 +1365,8 @@ DefineUnitType("unit-human-guard-tower-super", { Name = _("Guard Tower"),
     "help", "basic human voices help 2",
     "dead", "building destroyed"} } )
 
-DefineUnitType("unit-human-cannon-tower", { Name = _("Cannon Tower"),
-  Image = {"file", Wyrmsun ..  "graphics/teuton/buildings/watch_tower.png", "size", {64, 64}},
-  --Shadow = {"file", Wyrmsun ..  "graphics/teuton/buildings/watch_tower_shadow.png", "size", {64, 64}},
+DefineUnitType("unit-human-cannon-tower", { Name = _("Gun Tower"),
+  Image = {"file", "human/buildings/gun_tower.png", "size", {64, 64}},
   Animations = "animations-human-cannon-tower", Icon = "icon-human-cannon-tower",
   Costs = {"time", 190, "gold", 1000, "wood", 300},
   RepairHp = 4,
@@ -1455,8 +1396,7 @@ DefineUnitType("unit-human-cannon-tower", { Name = _("Cannon Tower"),
     "dead", "building destroyed"} } )
 
 DefineUnitType("unit-human-cannon-tower-super", { Name = _("Cannon Tower"),
-  Image = {"file", Wyrmsun ..  "graphics/teuton/buildings/watch_tower.png", "size", {64, 64}},
-  --Shadow = {"file", Wyrmsun ..  "graphics/teuton/buildings/watch_tower_shadow.png", "size", {64, 64}},
+  Image = {"file", "human/buildings/gun_tower.png", "size", {64, 64}},
   Animations = "animations-human-cannon-tower", Icon = "icon-human-cannon-tower",
   Costs = {"time", 1900, "gold", 6000, "wood", 1500},
   RepairHp = 4,

@@ -8,9 +8,9 @@
 --                        T H E   W A R   B E G I N S
 --         Stratagus - A free fantasy real time strategy game engine
 --
---      constructions.lua - Define the constructions.
+--      constructions.ccl - Define the orc constructions.
 --
---      (c) Copyright 2001-2004 by Lutz Sammer and Jimmy Salmon
+--      (c) Copyright 2001,2003 by Lutz Sammer and Jimmy Salmon
 --
 --      This program is free software; you can redistribute it and/or modify
 --      it under the terms of the GNU General Public License as published by
@@ -27,22 +27,15 @@
 --      Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 --
 
-if (wargus.tileset == nil) then
-  wargus.tileset = "summer"
-end
+local files = {summer = "wild/buildings/shipyard_construction_site.png",
+  winter = "wild/buildings/shipyard_construction_site.png",
+  wasteland = "wild/buildings/shipyard_construction_site.png",
+  swamp = "wild/buildings/shipyard_construction_site.png"}
 
-Load("scripts/human/constructions.lua")
-Load("scripts/wild/constructions.lua")
-
-local files = {summer = "neutral/buildings/land_construction_site.png",
-  winter = "tilesets/winter/neutral/buildings/land_construction_site.png",
-  wasteland = "neutral/buildings/land_construction_site.png",
-  swamp = "neutral/buildings/land_construction_site.png"}
-
-DefineConstruction("construction-none", {
+DefineConstruction("construction-orc-shipyard", {
   Files = {
     File = files[wargus.tileset],
-    Size = {64, 64}},
+    Size = {96, 96}},
   Constructions = {
    {Percent = 0,
     File = "construction",
@@ -55,15 +48,15 @@ DefineConstruction("construction-none", {
     Frame = 1}}
 })
 
-local files = {summer = "neutral/buildings/land_construction_site.png",
-  winter = "tilesets/winter/neutral/buildings/land_construction_site.png",
-  wasteland = "neutral/buildings/land_construction_site.png",
-  swamp = "neutral/buildings/land_construction_site.png"}
+local files = {summer = "wild/buildings/oil_well_construction_site.png",
+  winter = "wild/buildings/oil_well_construction_site.png",
+  wasteland = "wild/buildings/oil_well_construction_site.png",
+  swamp = "wild/buildings/oil_platform_construction_site.png"}
 
-DefineConstruction("construction-land", {
+DefineConstruction("construction-orc-oil-well", {
   Files = {
     File = files[wargus.tileset],
-    Size = {64, 64}},
+    Size = {96, 96}},
   Constructions = {
    {Percent = 0,
     File = "construction",
@@ -76,33 +69,36 @@ DefineConstruction("construction-land", {
     Frame = 1}}
 })
 
-local files = {summer = "neutral/buildings/land_construction_site.png",
-  winter = "tilesets/winter/neutral/buildings/land_construction_site.png",
-  wasteland = "neutral/buildings/land_construction_site.png",
-  swamp = "neutral/buildings/land_construction_site.png"}
+local files = {summer = "wild/buildings/refinery_construction_site.png",
+  winter = "wild/buildings/refinery_construction_site.png",
+  wasteland = "wild/buildings/refinery_construction_site.png",
+  swamp = "wild/buildings/refinery_construction_site.png"}
 
-DefineConstruction("construction-land2", {
+DefineConstruction("construction-orc-refinery", {
   Files = {
     File = files[wargus.tileset],
-    Size = {64, 64}},
+    Size = {96, 96}},
   Constructions = {
    {Percent = 0,
     File = "construction",
     Frame = 0},
    {Percent = 25,
     File = "construction",
+    Frame = 1},
+   {Percent = 50,
+    File = "main",
     Frame = 1}}
 })
 
-local files = {summer = "tilesets/summer/neutral/buildings/wall_construction_site.png",
-  winter = "tilesets/winter/neutral/buildings/wall_construction_site.png",
-  wasteland = "tilesets/wasteland/neutral/buildings/wall_construction_site.png",
-  swamp = "tilesets/summer/neutral/buildings/wall_construction_site.png"}
+local files = {summer = "wild/buildings/foundry_construction_site.png",
+  winter = "wild/buildings/foundry_construction_site.png",
+  wasteland = "wild/buildings/foundry_construction_site.png",
+  swamp = "wild/buildings/foundry_construction_site.png"}
 
-DefineConstruction("construction-wall", {
+DefineConstruction("construction-orc-foundry", {
   Files = {
     File = files[wargus.tileset],
-    Size = {32, 32}},
+    Size = {96, 96}},
   Constructions = {
    {Percent = 0,
     File = "construction",

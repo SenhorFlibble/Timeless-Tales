@@ -175,47 +175,22 @@ MakeSound("warthog annoyed", "neutral/units/warthog/annoyed/1.wav")
 
     --------------------------------------------------------------------------
     -- attack sounds
-MakeSound("sword attack", {
-	Wyrmsun .. "sounds/missiles/sword/swordhit_12a.wav",
-	Wyrmsun .. "sounds/missiles/sword/swordhit_10.wav",
-	Wyrmsun .. "sounds/missiles/sword/swordhit_10a.wav",
-	Wyrmsun .. "sounds/missiles/sword/swordhit_11.wav",
-	Wyrmsun .. "sounds/missiles/sword/swordhit_11a.wav",
-	Wyrmsun .. "sounds/missiles/sword/swordhit_11b.wav",
-	Wyrmsun .. "sounds/missiles/sword/swordhit_12.wav",
-	Wyrmsun .. "sounds/missiles/sword/swordhit_15.wav",
-	Wyrmsun .. "sounds/missiles/sword/swordhit_12b.wav",
-	Wyrmsun .. "sounds/missiles/sword/swordhit_13.wav",
-	Wyrmsun .. "sounds/missiles/sword/swordhit_13a.wav",
-	Wyrmsun .. "sounds/missiles/sword/swordhit_13b.wav",
-	Wyrmsun .. "sounds/missiles/sword/swordhit_14.wav",
-	Wyrmsun .. "sounds/missiles/sword/swordhit_14a.wav",
-	Wyrmsun .. "sounds/missiles/sword/swordhit_14b.wav",
-	Wyrmsun .. "sounds/missiles/sword/swordhit_18.wav",
-	Wyrmsun .. "sounds/missiles/sword/swordhit_15a.wav",
-	Wyrmsun .. "sounds/missiles/sword/swordhit_15b.wav",
-	Wyrmsun .. "sounds/missiles/sword/swordhit_16.wav",
-	Wyrmsun .. "sounds/missiles/sword/swordhit_16a.wav",
-	Wyrmsun .. "sounds/missiles/sword/swordhit_16b.wav",
-	Wyrmsun .. "sounds/missiles/sword/swordhit_17.wav",
-	Wyrmsun .. "sounds/missiles/sword/swordhit_17a.wav",
-	Wyrmsun .. "sounds/missiles/sword/swordhit_17b.wav",
-	Wyrmsun .. "sounds/missiles/sword/swordhit_19a.wav",
-	Wyrmsun .. "sounds/missiles/sword/swordhit_18a.wav",
-	Wyrmsun .. "sounds/missiles/sword/swordhit_19.wav"
-})
+MakeSound("sword attack", 
+	{"missiles/sword_attack/1.wav",
+	"missiles/sword_attack/2.wav",
+	"missiles/sword_attack/3.wav"})
 SetSoundRange("sword attack", 32)
 MakeSound("catapult-ballista attack", "missiles/catapult-ballista_attack.wav")
 MakeSound("punch", "missiles/punch.wav")
 MakeSound("fireball hit", "missiles/fireball_hit.wav")
 MakeSound("fireball throw", "missiles/fireball_throw.wav")
-MakeSound("bow throw", Wyrmsun.. "sounds/missiles/bow.wav")
+MakeSound("bow throw", "missiles/bow_throw.wav")
 SetSoundRange("bow throw", 32)
-MakeSound("bow hit", Wyrmsun.. "sounds/missiles/bow_hit.wav")
+MakeSound("bow hit", "missiles/bow_hit.wav")
 SetSoundRange("bow hit", 32)
-MakeSound("axe throw", Wyrmsun.. "sounds/missiles/throwing_axe.wav")
+MakeSound("axe throw", "missiles/axe_throw.wav")
 SetSoundRange("axe throw", 32)
-MakeSound("axe hit", Wyrmsun.. "sounds/missiles/throwing_axe_hit.wav")
+MakeSound("axe hit", "missiles/axe_hit.wav")
 SetSoundRange("axe hit", 32)
 MakeSound("fist", "missiles/fist.wav")
 MakeSound("peasant attack", "human/units/peasant/attack.wav")
@@ -389,7 +364,7 @@ MakeSound("gnome-selected",
 	{"human/units/gnome/selected-1.wav",
 	"human/units/gnome/selected-2.wav",
 	"human/units/gnome/selected-3.wav",
-	"human/units/gnome/selected-4.wav"})
+	"human/units/gnome/annoy-2.wav"})
 MakeSound("knight selected",
 	{"human/units/knight/selected/1.wav",
 	"human/units/knight/selected/2.wav",
@@ -619,9 +594,7 @@ MakeSound("tree-chopping",
 	{"misc/tree_chopping/1.wav",
 	"misc/tree_chopping/2.wav",
 	"misc/tree_chopping/3.wav",
-	"misc/tree_chopping/4.wav",
-	Wyrmsun .. "sounds/misc/tree_chopping/tree-chopping-1.wav",
-	Wyrmsun .. "sounds/misc/tree_chopping/tree-chopping-2.wav"})
+	"misc/tree_chopping/4.wav"})
 SetSoundRange("tree-chopping", 32)
 --SetSoundVolumePercent("tree-chopping", 75)
 

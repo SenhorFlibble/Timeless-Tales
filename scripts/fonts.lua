@@ -27,13 +27,13 @@
 --      Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 --
 
-CFont:New("large", CGraphic:New("ui/fonts/large.png", 17, 17))
+CFont:New("large", CGraphic:New("ui/fonts/dejavusansbold12.png", 19, 16))
 CFont:New("small", CGraphic:New("ui/fonts/small.png", 7, 6))
 
 if (wargus.tales == true) then
-	CFont:New("game", CGraphic:New("ui/fonts/game.png", 14, 14))
-	CFont:New("small-title", CGraphic:New("ui/fonts/large.png", 17, 17))
-	CFont:New("large-title", CGraphic:New("ui/fonts/large.png", 17, 17))
+	CFont:New("game", CGraphic:New("ui/fonts/dejavusansbold10.png", 15, 14))
+	CFont:New("small-title", CGraphic:New("ui/fonts/dejavusansbold12.png", 19, 16))
+	CFont:New("large-title", CGraphic:New("ui/fonts/dejavusansbold12.png", 19, 16))
 else
 	CFont:New("game", CGraphic:New("ui/fonts/game.png", wargus.game_font_width, 14))
 	CFont:New("small-title", CGraphic:New("ui/fonts/small_episode_titles.png", 32, 35))

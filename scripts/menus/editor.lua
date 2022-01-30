@@ -5,7 +5,7 @@ local function RunEditorNewMapMenu()
   local offx = (Video.Width - 640) / 2
   local offy = (Video.Height - 480) / 2
   local tilesets = { "summer", "swamp", "wasteland", "winter"}
-  local tilesets1 = {_("Summer"), _("Swamp"), _("Wasteland"), _("Winter")}
+  local tilesets1 = {_("Summer"), _("Swamp"), _("Desert"), _("Snow")}
   local mapSizes = {"32", "64", "96", "128", "160", "192", "224", "256"}
   local tilesetLabel = _("TileSet : ")
   local sizeLabel = _("Size :")
@@ -222,7 +222,7 @@ function RunEditorPlayerProperties()
   local types = {"neutral", "nobody", "computer", "person", "rescue-passive", "rescue-active"}
   local types1 = {_("Neutral"), _("Nobody"), _("Computer"), _("Person"), _("Rescue-passive"), _("Rescue-active")}
   local racenames = {"human", "orc"}
-  local racenames1 = {_("Human"),_("Orc")}
+  local racenames1 = {_("Freemen"),_("Wild")}
   local aiList = AIStrategyTypes
   table.remove(aiList, 1)
 

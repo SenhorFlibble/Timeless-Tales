@@ -38,7 +38,7 @@ function Briefing(title, objs, bg, text, voices)
   if (CurrentCampaignRace == "human") then
     Load("scripts/human/ui.lua")
   elseif (CurrentCampaignRace == "orc") then
-    Load("scripts/orc/ui.lua")
+    Load("scripts/wild/ui.lua")
   else
     StopMusic()
   end
@@ -314,7 +314,7 @@ function RunCampaign(campaign)
   if (CurrentCampaignRace == "human") then
     Load("scripts/human/ui.lua")
   elseif (CurrentCampaignRace == "orc") then
-    Load("scripts/orc/ui.lua")
+    Load("scripts/wild/ui.lua")
   end
 
   if (campaign ~= currentCampaign or position == nil) then

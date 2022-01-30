@@ -54,18 +54,18 @@ g_hbsp:Load()
 g_hbsg = CGraphic:New("ui/human/widgets/button-small-grayed.png")
 g_hbsg:Load()
 
-g_obln = CGraphic:New("ui/orc/widgets/button-large-normal.png")
+g_obln = CGraphic:New("ui/wild/widgets/button-large-normal.png")
 g_obln:Load()
-g_oblp = CGraphic:New("ui/orc/widgets/button-large-pressed.png")
+g_oblp = CGraphic:New("ui/wild/widgets/button-large-pressed.png")
 g_oblp:Load()
-g_oblg = CGraphic:New("ui/orc/widgets/button-large-grayed.png")
+g_oblg = CGraphic:New("ui/wild/widgets/button-large-grayed.png")
 g_oblg:Load()
 
-g_obsn = CGraphic:New("ui/orc/widgets/button-small-normal.png")
+g_obsn = CGraphic:New("ui/wild/widgets/button-small-normal.png")
 g_obsn:Load()
-g_obsp = CGraphic:New("ui/orc/widgets/button-small-pressed.png")
+g_obsp = CGraphic:New("ui/wild/widgets/button-small-pressed.png")
 g_obsp:Load()
-g_obsg = CGraphic:New("ui/orc/widgets/button-small-grayed.png")
+g_obsg = CGraphic:New("ui/wild/widgets/button-small-grayed.png")
 g_obsg:Load()
 
 g_hcheckbox_off = CGraphic:New("ui/human/widgets/checkbox-normal-unselected.png")
@@ -77,22 +77,22 @@ g_hcheckbox_on:Load()
 g_hcheckbox_on2 = CGraphic:New("ui/human/widgets/checkbox-pressed-selected.png")
 g_hcheckbox_on2:Load()
 
-g_ocheckbox_off = CGraphic:New("ui/orc/widgets/checkbox-normal-unselected.png")
+g_ocheckbox_off = CGraphic:New("ui/wild/widgets/checkbox-normal-unselected.png")
 g_ocheckbox_off:Load()
-g_ocheckbox_off2 = CGraphic:New("ui/orc/widgets/checkbox-pressed-unselected.png")
+g_ocheckbox_off2 = CGraphic:New("ui/wild/widgets/checkbox-pressed-unselected.png")
 g_ocheckbox_off2:Load()
-g_ocheckbox_on = CGraphic:New("ui/orc/widgets/checkbox-normal-selected.png")
+g_ocheckbox_on = CGraphic:New("ui/wild/widgets/checkbox-normal-selected.png")
 g_ocheckbox_on:Load()
-g_ocheckbox_on2 = CGraphic:New("ui/orc/widgets/checkbox-pressed-selected.png")
+g_ocheckbox_on2 = CGraphic:New("ui/wild/widgets/checkbox-pressed-selected.png")
 g_ocheckbox_on2:Load()
 
-g_oradio_off = CGraphic:New("ui/orc/widgets/radio-normal-unselected.png")
+g_oradio_off = CGraphic:New("ui/wild/widgets/radio-normal-unselected.png")
 g_oradio_off:Load()
-g_oradio_off2 = CGraphic:New("ui/orc/widgets/radio-pressed-unselected.png")
+g_oradio_off2 = CGraphic:New("ui/wild/widgets/radio-pressed-unselected.png")
 g_oradio_off2:Load()
-g_oradio_on = CGraphic:New("ui/orc/widgets/radio-normal-selected.png")
+g_oradio_on = CGraphic:New("ui/wild/widgets/radio-normal-selected.png")
 g_oradio_on:Load()
-g_oradio_on2 = CGraphic:New("ui/orc/widgets/radio-pressed-selected.png")
+g_oradio_on2 = CGraphic:New("ui/wild/widgets/radio-pressed-selected.png")
 g_oradio_on2:Load()
 
 g_hradio_off = CGraphic:New("ui/human/widgets/radio-normal-unselected.png")
@@ -143,35 +143,35 @@ g_hdslider_d = CGraphic:New("ui/human/widgets/down-arrow-grayed.png")
 g_hdslider_d:Load()
 
 -- right slider arrows for orc
-g_orslider_n = CGraphic:New("ui/orc/widgets/right-arrow-normal.png")
+g_orslider_n = CGraphic:New("ui/wild/widgets/right-arrow-normal.png")
 g_orslider_n:Load()
-g_orslider_p = CGraphic:New("ui/orc/widgets/right-arrow-pressed.png")
+g_orslider_p = CGraphic:New("ui/wild/widgets/right-arrow-pressed.png")
 g_orslider_p:Load()
-g_orslider_d = CGraphic:New("ui/orc/widgets/right-arrow-grayed.png")
+g_orslider_d = CGraphic:New("ui/wild/widgets/right-arrow-grayed.png")
 g_orslider_d:Load()
 
 -- left slider arrows for orc
-g_olslider_n = CGraphic:New("ui/orc/widgets/left-arrow-normal.png")
+g_olslider_n = CGraphic:New("ui/wild/widgets/left-arrow-normal.png")
 g_olslider_n:Load()
-g_olslider_p = CGraphic:New("ui/orc/widgets/left-arrow-pressed.png")
+g_olslider_p = CGraphic:New("ui/wild/widgets/left-arrow-pressed.png")
 g_olslider_p:Load()
-g_olslider_d = CGraphic:New("ui/orc/widgets/left-arrow-grayed.png")
+g_olslider_d = CGraphic:New("ui/wild/widgets/left-arrow-grayed.png")
 g_olslider_d:Load()
 
 -- up slider arrows for orc
-g_ouslider_n = CGraphic:New("ui/orc/widgets/up-arrow-normal.png")
+g_ouslider_n = CGraphic:New("ui/wild/widgets/up-arrow-normal.png")
 g_ouslider_n:Load()
-g_ouslider_p = CGraphic:New("ui/orc/widgets/up-arrow-pressed.png")
+g_ouslider_p = CGraphic:New("ui/wild/widgets/up-arrow-pressed.png")
 g_ouslider_p:Load()
-g_ouslider_d = CGraphic:New("ui/orc/widgets/up-arrow-grayed.png")
+g_ouslider_d = CGraphic:New("ui/wild/widgets/up-arrow-grayed.png")
 g_ouslider_d:Load()
 
 -- down slider arrows for orc
-g_odslider_n = CGraphic:New("ui/orc/widgets/down-arrow-normal.png")
+g_odslider_n = CGraphic:New("ui/wild/widgets/down-arrow-normal.png")
 g_odslider_n:Load()
-g_odslider_p = CGraphic:New("ui/orc/widgets/down-arrow-pressed.png")
+g_odslider_p = CGraphic:New("ui/wild/widgets/down-arrow-pressed.png")
 g_odslider_p:Load()
-g_odslider_d = CGraphic:New("ui/orc/widgets/down-arrow-grayed.png")
+g_odslider_d = CGraphic:New("ui/wild/widgets/down-arrow-grayed.png")
 g_odslider_d:Load()
 
 -- slider marker - so we know the value of the option we're trying to change
@@ -191,19 +191,19 @@ g_hvslider_d = CGraphic:New("ui/human/widgets/vslider-bar-grayed.png")
 g_hvslider_d:Load()
 
 -- same, but for orc this time.
-g_omarker = CGraphic:New("ui/orc/widgets/slider-knob.png")
+g_omarker = CGraphic:New("ui/wild/widgets/slider-knob.png")
 g_omarker:Load()
 
 -- slider image for the orcs
-g_oslider = CGraphic:New("ui/orc/widgets/hslider-bar-normal.png")
+g_oslider = CGraphic:New("ui/wild/widgets/hslider-bar-normal.png")
 g_oslider:Load()
-g_oslider_d = CGraphic:New("ui/orc/widgets/hslider-bar-grayed.png")
+g_oslider_d = CGraphic:New("ui/wild/widgets/hslider-bar-grayed.png")
 g_oslider_d:Load()
 
 -- vertical slider image for the orcs
-g_ovslider = CGraphic:New("ui/orc/widgets/vslider-bar-normal.png")
+g_ovslider = CGraphic:New("ui/wild/widgets/vslider-bar-normal.png")
 g_ovslider:Load()
-g_ovslider_d = CGraphic:New("ui/orc/widgets/vslider-bar-grayed.png")
+g_ovslider_d = CGraphic:New("ui/wild/widgets/vslider-bar-grayed.png")
 g_ovslider_d:Load()
 
 -- human list box item bar
@@ -211,7 +211,7 @@ g_hibar = CGraphic:New("ui/human/widgets/pulldown-bar-normal.png")
 g_hibar:Load()
 
 -- orc list box item bar
-g_oibar = CGraphic:New("ui/orc/widgets/pulldown-bar-normal.png")
+g_oibar = CGraphic:New("ui/wild/widgets/pulldown-bar-normal.png")
 g_oibar:Load()
 
 local hpanels = {
@@ -223,11 +223,11 @@ local hpanels = {
 }
 
 local opanels = {
-  "ui/orc/panel_1.png",
-  "ui/orc/panel_2.png",
-  "ui/orc/panel_3.png",
-  "ui/orc/panel_4.png",
-  "ui/orc/panel_5.png"
+  "ui/wild/panel_1.png",
+  "ui/wild/panel_2.png",
+  "ui/wild/panel_3.png",
+  "ui/wild/panel_4.png",
+  "ui/wild/panel_5.png"
 }
 
 local wc1_hpanels = {
@@ -834,39 +834,39 @@ function SetDefaultPlayerNames()
 	for i=0,7 do
 		if (GetPlayerData(i, "RaceName") == "human") then
 			if (i == 0) then
-				SetPlayerData(i, "Name", _("Nation of Stromgarde"))
+				SetPlayerData(i, "Name", _("Duchy or Hawksea"))
 			elseif (i == 1) then
-				SetPlayerData(i, "Name", _("Nation of Azeroth"))
+				SetPlayerData(i, "Name", _("Barony of Griffinlock"))
 			elseif (i == 2) then
-				SetPlayerData(i, "Name", _("Nation of Kul Tiras"))
+				SetPlayerData(i, "Name", _("Frostdrake Consortium"))
 			elseif (i == 3) then
-				SetPlayerData(i, "Name", _("Nation of Dalaran"))
+				SetPlayerData(i, "Name", _("Imperial Legion"))
 			elseif (i == 4) then
-				SetPlayerData(i, "Name", _("Nation of Alterac"))
+				SetPlayerData(i, "Name", _("Mercenaries"))
 			elseif (i == 5) then
-				SetPlayerData(i, "Name", _("Nation of Gilneas"))
+				SetPlayerData(i, "Name", _("Freemen Nation"))
 			elseif (i == 6) then
-				SetPlayerData(i, "Name", _("Nation of Lordaeron"))
+				SetPlayerData(i, "Name", _("Order of the Lady"))
 			elseif (i == 7) then
-				SetPlayerData(i, "Name", _("Alliance Traitors"))
+				SetPlayerData(i, "Name", _("Freemen Defectors"))
 			end
 		elseif  (GetPlayerData(i, "RaceName") == "orc") then
 			if (i == 0) then
-				SetPlayerData(i, "Name", _("Blackrock Clan"))
+				SetPlayerData(i, "Name", _("Crimson Flower Tribe"))
 			elseif (i == 1) then
-				SetPlayerData(i, "Name", _("Stormreaver Clan"))
+				SetPlayerData(i, "Name", _("Deepwater Tribe"))
 			elseif (i == 2) then
-				SetPlayerData(i, "Name", _("Bleeding Hollow Clan"))
+				SetPlayerData(i, "Name", _("Windstriker Tribe"))
 			elseif (i == 3) then
-				SetPlayerData(i, "Name", _("Twilight's Hammer Clan"))
+				SetPlayerData(i, "Name", _("Moonshadow Tribe"))
 			elseif (i == 4) then
-				SetPlayerData(i, "Name", _("Burning Blade Clan"))
+				SetPlayerData(i, "Name", _("Flamedancer Tribe"))
 			elseif (i == 5) then
-				SetPlayerData(i, "Name", _("Black Tooth Grin Clan"))
+				SetPlayerData(i, "Name", _("Earthburrow Tribe"))
 			elseif (i == 6) then
-				SetPlayerData(i, "Name", _("Dragonmaw Clan"))
+				SetPlayerData(i, "Name", _("Stoneshadow Tribe"))
 			elseif (i == 7) then
-				SetPlayerData(i, "Name", _("Laughing Skull Clan"))
+				SetPlayerData(i, "Name", _("Fieldrunner Tribe"))
 			end
 		end
 	end

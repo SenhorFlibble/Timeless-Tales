@@ -274,7 +274,7 @@ DefinePanelContents(
 	{ Pos = {126, 149}, More = {"Text", {Variable = "Mana", Centered = true}}, Condition = {Mana = "only"} }} })
 
 Load("scripts/human/ui.lua")
-Load("scripts/orc/ui.lua")
+Load("scripts/wild/ui.lua")
 
 wargus.playlist = { "music/Main Menu" .. wargus.music_extension }
 
