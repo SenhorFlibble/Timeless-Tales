@@ -1,1 +1,3 @@
 copyright diKKen 2003 
+
+Note: alternate water tiles by Nikita Sadkov, fog of war derived from Wyrmsun's fog by Jinn
