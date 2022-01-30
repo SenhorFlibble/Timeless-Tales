@@ -1,0 +1,4 @@
+Authors: Nikita Sadkov, 2016
+License: GPL2, CC-BY-SA
+Comment: fireball/dragon-breath done by myself (GPL2, CC-BY-SA)
+Origin: https://forums.stratagus.com/viewtopic.php?f=33&t=3624&sid=57df551379335b0a67f07cbe2a2515ab&start=40

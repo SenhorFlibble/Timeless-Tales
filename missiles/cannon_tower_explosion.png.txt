@@ -1,0 +1,3 @@
+Authors: Nikita Sadkov, Daniel Cook, 2016
+Comment: Cannon tower explosion. Edited out of sprite by Daniel Cook
+Origin: https://forums.stratagus.com/viewtopic.php?f=33&t=3624&start=50

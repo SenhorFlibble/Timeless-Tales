@@ -1,0 +1,4 @@
+Authors: Nikita Sadkov, 2016
+License: Unknown
+Comment: Ballista/catapult impact sprite. Based of CC-BY fireball_hit animation by Big Rook Games (http://www.bigrookgames.com)
+Origin: https://forums.stratagus.com/viewtopic.php?f=33&t=3624&start=50
