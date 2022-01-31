@@ -76,7 +76,7 @@ DefineSpell("spell-buildpoint-townhall",
 unit = "unit-footman"
 index = UnitDatabaseSetup("human", unit)
 DefineSpell("spell-unit-footman",
-	"showname", "Footman",
+	"showname", "Infantryman",
 	"res-cost", {0, UnitDatabase["human"][index]["CastGold"], UnitDatabase["human"][index]["CastWood"], UnitDatabase["human"][index]["CastOil"], 0, 0, 0},
 	"range", 6,
 	"target", "position",
@@ -89,7 +89,7 @@ DefineSpell("spell-unit-footman",
 unit = "unit-yeoman"
 index = UnitDatabaseSetup("human", unit)
 DefineSpell("spell-unit-yeoman",
-	"showname", "Yeoman",
+	"showname", "Explorer",
 	"res-cost", {0, UnitDatabase["human"][index]["CastGold"], UnitDatabase["human"][index]["CastWood"], UnitDatabase["human"][index]["CastOil"], 0, 0, 0},
 	"range", 6,
 	"target", "position",
@@ -115,7 +115,7 @@ DefineSpell("spell-unit-archer",
 unit = "unit-ballista"
 index = UnitDatabaseSetup("human", unit)
 DefineSpell("spell-unit-ballista",
-	"showname", "Ballista",
+	"showname", "Catapult",
 	"res-cost", {0, UnitDatabase["human"][index]["CastGold"], UnitDatabase["human"][index]["CastWood"], UnitDatabase["human"][index]["CastOil"], 0, 0, 0},
 	"range", 6,
 	"target", "position",
@@ -141,7 +141,7 @@ DefineSpell("spell-unit-knight",
 unit = "unit-female-hero"
 index = UnitDatabaseSetup("human", unit)
 DefineSpell("spell-unit-female-hero",
-	"showname", "Hero Archer",
+	"showname", "Pathfinder",
 	"res-cost", {0, UnitDatabase["human"][index]["CastGold"], UnitDatabase["human"][index]["CastWood"], UnitDatabase["human"][index]["CastOil"], 0, 0, 0},
 	"range", 6,
 	"target", "position",

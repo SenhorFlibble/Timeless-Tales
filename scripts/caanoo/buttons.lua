@@ -202,7 +202,7 @@ DefineButton( { Pos = 7, Level = 1, Icon = "icon-knight-rider",
 DefineButton( { Pos = 8, Level = 1, Icon = "icon-female-hero",
 	Action = "cast-spell", Value = "spell-unit-female-hero",
 	Allowed = "check-upgrade", AllowArg = {"upgrade-eye-of-kilrogg"},
-	Key = "a", Hint = "~!ALLERIA",
+	Key = "a", Hint = "P~!ATHFINDER",
 	ForUnit = {"unit-caanoo-wiseman"} } )	
 	
 DefineButton( { Pos = 9, Level = 1, Icon = "icon-cancel",
@@ -236,10 +236,10 @@ DefineButton( { Pos = 4, Level = 2, Icon = "icon-peasant",
 	Key = "p", Hint = "~!PEASANT",
 	ForUnit = {"unit-caanoo-wiseman"} } )	
 	
-DefineButton( { Pos = 5, Level = 2, Icon = "icon-ranger",
+DefineButton( { Pos = 5, Level = 2, Icon = "icon-pathfinder",
 	Action = "cast-spell", Value = "spell-unit-yeoman",
 	Allowed = "check-upgrade", AllowArg = {"upgrade-eye-of-kilrogg"},
-	Key = "o", Hint = "YE~!OMAN",
+	Key = "o", Hint = "EXPL~!ORER",
 	ForUnit = {"unit-caanoo-wiseman"} } )	
 	
 DefineButton( { Pos = 6, Level = 2, Icon = "icon-peasant",
