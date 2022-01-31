@@ -118,7 +118,7 @@ DefineButton( { Pos = 4, Level = 2, Icon = "icon-peon",
 	Key = "p", Hint = "~!PEON",
 	ForUnit = {"unit-caanoo-wiseskeleton"} } )	
 	
-DefineButton( { Pos = 5, Level = 2, Icon = "icon-axethrower",
+DefineButton( { Pos = 5, Level = 2, Icon = "icon-goblin-archer",
 	Action = "cast-spell", Value = "spell-unit-nomad",
 	Allowed = "check-upgrade", AllowArg = {"upgrade-eye-of-kilrogg"},
 	Key = "o", Hint = "N~!OMAD",

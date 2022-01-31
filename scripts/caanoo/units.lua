@@ -444,15 +444,10 @@ DefineUnitType("unit-void-gateway", { Name = "Void Gateway",
 --    "ready", "dark-portal-ready",
     "help", "basic orc voices help 2",
     "dead", "building destroyed"} } )
-	
-UnitTypeFiles["unit-nomad"] = {summer = "orc/units/troll_axethrower_green.png",
-  winter = "orc/units/troll_axethrower.png",
-  wasteland = "orc/units/troll_axethrower_yellow.png",
-  swamp = "orc/units/troll_axethrower.png"}
 
 DefineUnitType("unit-nomad", { Name = "Nomad",
-  Image = {"file", "size", "size", {72, 54}},
-  Animations = "animations-axethrower", Icon = "icon-axethrower",
+  Image = {"file", "wild/units/goblin_archer.png", "size", {72, 72}},
+  Animations = "animations-human-archer", Icon = "icon-goblin-archer",
   Costs = {"time", 70, "gold", 500, "wood", 50},
   Level = 1,
   Speed = 10,
@@ -461,12 +456,12 @@ DefineUnitType("unit-nomad", { Name = "Nomad",
   RandomMovementProbability = 1,
   TileSize = {1, 1}, BoxSize = {33, 33},
   SightRange = 6, ComputerReactionRange = 9, PersonReactionRange = 6,
-  BasicDamage = 3, PiercingDamage = 6, Missile = "missile-axe",
+  BasicDamage = 3, PiercingDamage = 6, Missile = "missile-goblin-arrow",
   MaxAttackRange = 6,
   Priority = 57,
   Points = 100,
   Demand = 1,
-  Corpse = "unit-orc-dead-body",
+  Corpse = "unit-goblin-dead-body",
   Type = "land",
   RightMouseAction = "attack",
   CanAttack = true,
@@ -475,11 +470,11 @@ DefineUnitType("unit-nomad", { Name = "Nomad",
   organic = true,
   SelectableByRectangle = true,
   Sounds = {
-    "selected", "axethrower-selected",
-    "acknowledge", "axethrower-acknowledge",
+    "selected", "zuljin-selected",
+    "acknowledge", "zuljin-acknowledge",
     "ready", "axethrower-ready",
     "help", "basic orc voices help 1",
-    "dead", "basic orc voices dead"} } )
+    "dead", "basic goblin voices dead"} } )
 	
 
 -- Foundations
