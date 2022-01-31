@@ -266,6 +266,20 @@ DefineAnimations("animations-ice-bringer", {
   Death = DeathKnightDeath,
 })
 
+DefineAnimations("animations-dark-druid", {
+  Still = DeathKnightStill,
+  Move = DeathKnightMove,
+  Attack = {"unbreakable begin", "frame 25", "wait 5", "frame 30", "wait 5",
+    "frame 35", "attack", "sound death-knight-attack", "wait 7",
+    "frame 40", "wait 5", "frame 45",  "wait 5", "frame 40", "wait 5", "frame 35", 
+	"wait 7", "frame 0", "unbreakable end", "wait 1",},
+  SpellCast = {"unbreakable begin", "frame 25", "wait 5", "frame 30", "wait 5",
+    "frame 35", "attack", "wait 7", "frame 40", "wait 5", "frame 45", "wait 5",
+	"frame 40", "wait 5", "frame 35", "wait 7", "frame 0", "unbreakable end", "wait 1",},
+  Death = {"unbreakable begin", "frame 50", "wait 5", "frame 55", "wait 5", "frame 60", "wait 5",
+    "frame 60", "wait 5", "frame 60", "unbreakable end", "wait 1",},
+})
+
 
 DefineAnimations("animations-goblin-sappers", {
   Still = UnitStill,
