@@ -202,6 +202,15 @@ DefineAnimations("animations-human-archer", {
     "frame 65", "unbreakable end", "wait 1",},
 })
 
+DefineAnimations("animations-explorer", {
+  Still = ArcherStill,
+  Move = ArcherMove,
+  Attack = {"unbreakable begin", "frame 25", "wait 5", "frame 30", "wait 5", "frame 35", "attack", "sound axethrower-attack", "wait 3",
+    "frame 40", "wait 3", "frame 45", "wait 10", "frame 50", "wait 13", "frame 50", "wait 15", "frame 0", "unbreakable end", "wait 1",},
+  Death = {"unbreakable begin", "frame 55", "wait 3", "frame 60", "wait 3", "frame 65", "wait 100",
+    "frame 65", "unbreakable end", "wait 1",},
+})
+
 DefineAnimations("animations-ranger", {
   Still = ArcherStill,
   Move = ArcherMove,
