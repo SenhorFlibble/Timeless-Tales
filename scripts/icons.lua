@@ -69,7 +69,7 @@ local icons = {
   {"icon-wise-man", 32},
   {"icon-ice-bringer", 33},
   {"icon-man-of-light", 34},
-  {"icon-sharp-axe", 35},
+--  {"icon-sharp-axe", 35},
   {"icon-double-head", 36},
   {"icon-daemon", 37},
   {"icon-farm", 38},
@@ -340,6 +340,18 @@ DefineIcon({
 	Name = "icon-ugly-guy",
 	Size = {46, 38},
 	File = "human/icons/long_swordsman.png"
+})
+
+DefineIcon({
+	Name = "icon-sharp-axe",
+	Size = {46, 38},
+	File = "wild/icons/sharp.png"
+})
+
+DefineIcon({
+	Name = "icon-goblin-archer",
+	Size = {46, 38},
+	File = "wild/icons/goblin_archer.png"
 })
 
 if (wargus.tileset == nil) then

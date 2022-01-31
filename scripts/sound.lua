@@ -74,9 +74,11 @@ MakeSound("basic human voices dead", "human/basic_voices/dead.wav")
 --	Define simple orc sounds.
 --
 MakeSound("basic orc voices ready", "orc/basic_voices/ready.wav")
-MakeSound("basic orc voices help 1", "orc/basic_voices/help/1.wav")
-MakeSound("basic orc voices help 2", "orc/basic_voices/help/2.wav")
+MakeSound("basic orc voices help 1", "goblin/basic_voices/under-attack.wav")
+MakeSound("basic orc voices help 2", "goblin/basic_voices/town-attack.wav")
 MakeSound("basic orc voices dead", "orc/basic_voices/dead.wav")
+MakeSound("basic goblin voices dead", {"goblin/basic_voices/goblin-die-1.wav",
+	"goblin/basic_voices/goblin-die-2.wav"})
 
 ------------------------------------------------------------------------------
 --	Define simple orc building.
@@ -95,7 +97,7 @@ placement_success = MakeSound("placement success", "ui/placement_success.wav")
 
     -- building selection sounds
 MakeSound("blacksmith", "buildings/blacksmith.wav")
-MakeSound("church-selected", "human/buildings/church.wav")
+MakeSound("church-selected", "human/buildings/churchbell.wav")
 MakeSound("altar-of-storms-selected", "orc/buildings/altar_of_storms.wav")
 MakeSound("stables-selected", "human/buildings/stables.wav")
 MakeSound("ogre-mound-selected", "orc/buildings/ogre_mound.wav")
@@ -136,7 +138,7 @@ MakeSound("slow", "spells/slow.wav")
 MakeSound("unholy armor", "spells/unholy_armor.wav")
 MakeSound("whirlwind", "spells/whirlwind.wav")
     -- ready sounds
-MakeSound("peon-ready", "orc/peon/ready.wav")
+MakeSound("peon-ready", "goblin/worker/goblin-worker-ready-2.wav")
 MakeSound("death-knight-ready", "orc/units/death_knight/ready.wav")
 MakeSound("dwarves-ready", "human/units/dwarven_demolition_squad/ready.wav")
 MakeSound("elven archer-ranger ready",
@@ -208,10 +210,10 @@ MakeSound("basic human voices acknowledge",
 	"human/basic_voices/acknowledgement/3.wav",
 	"human/basic_voices/acknowledgement/4.wav"})
 MakeSound("basic orc voices acknowledge",
-	{"orc/basic_voices/acknowledgement/1.wav",
-	"orc/basic_voices/acknowledgement/2.wav",
-	"orc/basic_voices/acknowledgement/3.wav",
-	"orc/basic_voices/acknowledgement/4.wav"})
+	{"goblin/basic_voices/acknowledge-01.wav",
+	"goblin/basic_voices/acknowledge-02.wav",
+	"goblin/basic_voices/acknowledge-03.wav",
+	"goblin/basic_voices/acknowledge-08.wav"})
 MakeSound("gnome-acknowledge",
 	{"human/units/gnome/acknowledge-1.wav",
 	"human/units/gnome/acknowledge-2.wav",
@@ -338,12 +340,12 @@ MakeSound("basic human voices selected",
 	"human/basic_voices/selected/5.wav",
 	"human/basic_voices/selected/6.wav"})
 MakeSound("basic orc voices selected",
-	{"orc/basic_voices/selected/1.wav",
-	"orc/basic_voices/selected/2.wav",
-	"orc/basic_voices/selected/3.wav",
-	"orc/basic_voices/selected/4.wav",
-	"orc/basic_voices/selected/5.wav",
-	"orc/basic_voices/selected/6.wav"})
+	{"goblin/basic_voices/selected-01.wav",
+	"goblin/basic_voices/selected-02.wav",
+	"goblin/basic_voices/selected-03.wav",
+	"goblin/basic_voices/selected-05.wav",
+	"goblin/basic_voices/selected-07.wav",
+	"goblin/basic_voices/selected-11.wav"})
 MakeSound("death knight selected",
 	{"orc/units/death_knight/selected/1.wav",
 	"orc/units/death_knight/selected/2.wav"})
@@ -458,13 +460,9 @@ MakeSound("basic human voices annoyed",
 	"human/basic_voices/annoyed/6.wav",
 	"human/basic_voices/annoyed/7.wav"})
 MakeSound("basic orc voices annoyed",
-	{"orc/basic_voices/annoyed/1.wav",
-	"orc/basic_voices/annoyed/2.wav",
-	"orc/basic_voices/annoyed/3.wav",
-	"orc/basic_voices/annoyed/4.wav",
-	"orc/basic_voices/annoyed/5.wav",
-	"orc/basic_voices/annoyed/6.wav",
-	"orc/basic_voices/annoyed/7.wav"})
+	{"goblin/basic_voices/selected-06.wav",
+	"goblin/basic_voices/selected-07.wav",
+	"goblin/basic_voices/selected-08.wav"})
 MakeSound("death knight annoyed",
 	{"orc/units/death_knight/annoyed/1.wav",
 	"orc/units/death_knight/annoyed/2.wav",
@@ -696,7 +694,7 @@ MapSound("cho-gall-acknowledge", "ogre-mage-acknowledge")
 MapSound("lothar-acknowledge", "knight-acknowledge")
 MapSound("gul-dan-acknowledge", "death-knight-acknowledge")
 MapSound("uther-lightbringer-acknowledge", "paladin-acknowledge")
-MapSound("zuljin-acknowledge", "troll axethrower-berserker acknowledge")
+MapSound("zuljin-acknowledge", "basic orc voices acknowledge")
     --	 ready sounds
 MapSound("footman-ready", "basic human voices ready")
 MapSound("grunt-ready", "basic orc voices ready")
@@ -732,7 +730,7 @@ MapSound("cho-gall-selected", "ogre-mage-selected")
 MapSound("lothar-selected", "knight-selected")
 MapSound("gul-dan-selected", "death-knight-selected")
 MapSound("uther-lightbringer-selected", "paladin-selected")
-MapSound("zuljin-selected", "troll axethrower-berserker selected")
+MapSound("zuljin-selected", "basic orc voices selected")
 MapSound("skeleton-selected", "click")
 MapSound("daemon-selected", "click")
 MapSound("human-barracks-selected", "click")
@@ -836,7 +834,7 @@ DefineGameSounds(
   "building-construction", {"orc", building_construction},
 
   "work-complete", {"human", MakeSound("basic human voices work complete", "human/basic_voices/work_complete.wav")},
-  "work-complete", {"orc", MakeSound("basic orc voices work complete", "orc/basic_voices/work_complete.wav")},
+  "work-complete", {"orc", MakeSound("basic orc voices work complete", "goblin/worker/built.wav")},
 
   "rescue", {"human", MakeSound("human rescue", "human/capture.wav")},
   "rescue", {"orc", MakeSound("orc rescue", "orc/capture.wav")} )

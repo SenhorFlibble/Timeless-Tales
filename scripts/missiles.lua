@@ -119,6 +119,11 @@ DefineMissileType("missile-arrow",
   DrawLevel = 50, ImpactSound = "bow hit",
   Class = "missile-class-point-to-point", Sleep = 1, Speed = 32, Range = 0 } )
 
+DefineMissileType("missile-goblin-arrow",
+  { File = "missiles/goblin_arrow.png", Size = {32, 32}, Frames = 5, NumDirections = 9,
+  DrawLevel = 50, ImpactSound = "bow hit",
+  Class = "missile-class-point-to-point", Sleep = 1, Speed = 32, Range = 0 } )
+
 DefineMissileType("missile-arrow-super",
   { File = "missiles/metal_arrow.png", Size = {40, 40}, Frames = 5, NumDirections = 9,
   DrawLevel = 50, ImpactSound = "bow hit",
