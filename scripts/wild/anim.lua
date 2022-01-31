@@ -454,6 +454,22 @@ DefineAnimations("animations-skeleton", {
 })
 
 
+DefineAnimations("animations-skeleton-warrior", {
+  Still = {"frame 0", "wait 4", "frame 0", "wait 1", },
+  Move = {"unbreakable begin", "frame 0", "move 3", "wait 2", "frame 5", "move 3", "wait 2",
+    "frame 5", "move 3", "wait 1", "frame 10", "move 2", "wait 2",
+    "frame 10", "move 3", "wait 3", "frame 0", "move 2", "wait 1",
+    "frame 0", "move 3", "wait 2", "frame 15", "move 3", "wait 2",
+    "frame 15", "move 3", "wait 1", "frame 20", "move 2", "wait 2",
+    "frame 20", "move 3", "wait 2", "frame 0", "move 2", "unbreakable end", "wait 1", },
+  Attack = {"unbreakable begin", "frame 25", "wait 4", "frame 30", "wait 4",
+    "frame 35", "attack", "sound skeleton-attack", "wait 4",
+    "frame 40", "wait 4", "frame 45", "wait 18", "frame 0", "unbreakable end", "wait 1", },
+  Death = {"unbreakable begin", "frame 50", "wait 3", "frame 55", "wait 3", "frame 60", "wait 3",
+    "frame 60", "wait 3", "frame 60", "wait 3", "frame 60", "unbreakable end", "wait 1", },
+})
+
+
 DefineAnimations("animations-orc-guard-tower", {
   Still = BuildingStill,
   Attack = {"unbreakable begin", "frame 0", "attack", "wait 59",
