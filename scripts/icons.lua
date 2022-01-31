@@ -222,8 +222,8 @@ local icons = {
   {"icon-orc-attack-ground", 183},
   {"icon-human-patrol-naval", 184},
   {"icon-orc-patrol-naval", 185},
-  {"icon-quick-blade", 186},
-  {"icon-female-hero", 187},
+--  {"icon-quick-blade", 186},
+--  {"icon-female-hero", 187},
 --  {"icon-ugly-guy", 188},
   {"icon-evil-knight", 189},
   {"icon-beast-cry", 190},
@@ -315,7 +315,7 @@ DefineIcon({
 DefineIcon({
 	Name = "icon-skeleton",
 	Size = {46, 38},
-	File = "wild/icons/skeleton.png"
+	File = "neutral/icons/skeleton.png"
 })
 
 DefineIcon({
@@ -340,6 +340,24 @@ DefineIcon({
 	Name = "icon-ugly-guy",
 	Size = {46, 38},
 	File = "human/icons/long_swordsman.png"
+})
+
+DefineIcon({
+	Name = "icon-quick-blade",
+	Size = {46, 38},
+	File = "neutral/icons/surghan_mercenary_steelclad.png"
+})
+
+DefineIcon({
+	Name = "icon-female-hero",
+	Size = {46, 38},
+	File = "neutral/icons/explorer.png"
+})
+
+DefineIcon({
+	Name = "icon-pathfinder",
+	Size = {46, 38},
+	File = "neutral/icons/pathfinder.png"
 })
 
 DefineIcon({
