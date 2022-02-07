@@ -99,9 +99,12 @@ DefineUnitType("unit-peon", { Name = _("Goblin Artisan"),
   organic = true,
   SelectableByRectangle = true,
   Sounds = {
-    "selected", "peon-selected",
-    "acknowledge", "peon-acknowledge",
-    "ready", "peon-ready",
+--    "selected", "peon-selected",
+--    "acknowledge", "peon-acknowledge",
+--    "ready", "peon-ready",
+    "selected", "goblin sappers selected",
+    "acknowledge", "goblin-sappers-acknowledge",
+    "ready", "goblin-zeppelin-ready",
     "help", "basic orc voices help 1",
     "dead", "basic goblin voices dead"} } )
 
@@ -881,9 +884,12 @@ DefineUnitType("unit-sharp-axe", { Name = _("Sharp Shooter"),
   organic = true,
   SelectableByRectangle = true,
   Sounds = {
-    "selected", "zuljin-selected",
-    "acknowledge", "zuljin-acknowledge",
+--    "selected", "zuljin-selected",
+--    "acknowledge", "zuljin-acknowledge",
 --    "ready", "zuljin-ready",
+    "selected", "goblin sappers selected",
+    "acknowledge", "goblin-sappers-acknowledge",
+    "ready", "goblin-zeppelin-ready",
     "help", "basic orc voices help 1",
     "dead", "basic goblin voices dead"} } )
 
