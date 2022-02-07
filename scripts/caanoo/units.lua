@@ -470,9 +470,12 @@ DefineUnitType("unit-nomad", { Name = "Nomad",
   organic = true,
   SelectableByRectangle = true,
   Sounds = {
-    "selected", "zuljin-selected",
-    "acknowledge", "zuljin-acknowledge",
-    "ready", "axethrower-ready",
+--    "selected", "zuljin-selected",
+--    "acknowledge", "zuljin-acknowledge",
+--    "ready", "axethrower-ready",
+    "selected", "goblin sappers selected",
+    "acknowledge", "goblin-sappers-acknowledge",
+    "ready", "goblin-zeppelin-ready",
     "help", "basic orc voices help 1",
     "dead", "basic goblin voices dead"} } )
 	
